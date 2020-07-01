@@ -1,7 +1,16 @@
 import React from "react";
+import NavBar from "components/NavBar";
+import NavButton from "components/NavButton";
 
 function App() {
-  return <div className="App">Temporary something!</div>;
+  let navOption;
+  // Here add condition from onClick
+  if (false) {
+    navOption = <NavButton />;
+  } else {
+    navOption = <NavBar />;
+  }
+  return <div className="App">{navOption}</div>;
 }
 
 export default App;
