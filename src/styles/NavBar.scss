@@ -3,5 +3,62 @@
 .NavBar {
   background-color: $primary-color;
   color: $font-color-2;
-  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.LeftSide {
+  width: 90%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.RightSide {
+  width: 10%;
+}
+
+.CloseButton {
+  float: right;
+}
+
+.CloseButton:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 320px) {
+  .NavBar {
+    padding: 20px;
+    height: calc(100vh - 40px);
+  }
+
+  .LeftSide {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10%;
+  }
+
+  .NavOption {
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 900px) {
+  .NavBar {
+    padding: 10px;
+    height: auto;
+    border-radius: 0 0 0 100px;
+  }
+
+  .LeftSide {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .NavOption {
+    padding-top: 0px;
+  }
 }
