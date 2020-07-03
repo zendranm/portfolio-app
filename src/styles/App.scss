@@ -1,10 +1,20 @@
 .MainPanel {
-  margin-top: 50px;
-  height: 1000px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
   align-content: center;
+}
+
+@media (min-width: 320px) {
+  .MainPanel {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 900px) {
+  .MainPanel {
+    margin-top: 100px;
+  }
 }

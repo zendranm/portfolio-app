@@ -1,0 +1,14 @@
+@import "variables";
+
+.SecondPanel {
+  width: 100%;
+  margin-top: 150px;
+}
+
+svg polygon {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
+  fill: $primary-color;
+}

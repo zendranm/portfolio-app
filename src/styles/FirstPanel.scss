@@ -1,0 +1,56 @@
+@import "variables";
+
+.NamePart {
+  font-weight: 900;
+  margin-top: 10px;
+  animation: 0.4s slide-right 1.6s forwards;
+  transform: translateX(-300%);
+}
+
+.JobPart {
+  background-color: $primary-color;
+  color: $font-color-2;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-weight: 900;
+  display: inline-block;
+  animation: 0.4s slide-right 1.8s forwards;
+  transform: translateX(-300%);
+}
+
+@media (min-width: 320px) {
+  .NamePart {
+    font-size: 20px;
+  }
+
+  .JobPart {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 375px) {
+  .NamePart {
+    font-size: 25px;
+  }
+
+  .JobPart {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 400px) {
+  .NamePart {
+    font-size: 30px;
+  }
+
+  .JobPart {
+    font-size: 30px;
+  }
+}
+
+@keyframes slide-right {
+  to {
+    transform: translateX(0);
+  }
+}

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import "styles/App.scss";
 import NavBar from "components/NavBar";
 import NavButton from "components/NavButton";
-import MainPanel from "components/MainPanel";
-
+import FirstPanel from "components/FirstPanel";
+import SecondPanel from "components/SecondPanel";
 const App = () => {
   const [isNavBarVisible, updateIsNavBarVisible] = useState(false);
 
@@ -23,7 +24,13 @@ const App = () => {
   return (
     <div className="App">
       {navOption}
-      <MainPanel />
+      <div className="MainPanel">
+        <FirstPanel />
+        <SecondPanel />
+        <div>AAA</div>
+        <div>BBB</div>
+        <div>CCC</div>
+      </div>
     </div>
   );
 };
