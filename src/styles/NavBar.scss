@@ -8,6 +8,10 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  animation: 0.2s slide-left 0s forwards;
+  transform: translateX(300%);
+  position: fixed;
+  z-index: 9999;
 }
 
 .LeftSide {
@@ -31,7 +35,6 @@
 @media (min-width: 320px) {
   .NavBar {
     padding: 20px;
-    position: fixed;
     width: calc(100% - 40px);
     height: calc(100% - 40px);
     top: 0;
@@ -55,7 +58,6 @@
     height: auto;
     border-radius: 0 0 0 100px;
     width: calc(100% - 20px);
-    position: fixed;
     top: 0;
     right: 0;
   }
@@ -67,5 +69,11 @@
 
   .NavOption {
     padding-top: 0px;
+  }
+}
+
+@keyframes slide-left {
+  to {
+    transform: translateX(0);
   }
 }

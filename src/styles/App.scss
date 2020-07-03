@@ -5,16 +5,5 @@
   justify-content: flex-start;
   align-items: center;
   align-content: center;
-}
-
-@media (min-width: 320px) {
-  .MainPanel {
-    margin-top: 50px;
-  }
-}
-
-@media (min-width: 900px) {
-  .MainPanel {
-    margin-top: 100px;
-  }
+  margin-top: 150px;
 }
