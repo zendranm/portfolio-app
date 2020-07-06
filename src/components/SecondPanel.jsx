@@ -4,7 +4,7 @@ import "styles/SecondPanel.scss";
 const SecondPanel = () => {
   return (
     <div className="SecondPanel">
-      <div className="mybg">
+      <div className="mySVG">
         <svg viewBox="0 0 200 230">
           <polygon points="0,40 200,0 200,200 100,230 0,200" />
         </svg>
@@ -22,6 +22,7 @@ const SecondPanel = () => {
         imperdiet ipsum leo, ut egestas ex mollis non. Proin sit amet congue mi,
         non sagittis arcu.
       </div>
+      <div class="mySVG ghost" />
     </div>
   );
 };
