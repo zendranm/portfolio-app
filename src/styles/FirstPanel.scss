@@ -1,5 +1,10 @@
 @import "variables";
 
+.FirstPanel {
+  padding-top: 35vh;
+  height: 40vh;
+}
+
 .NamePart {
   font-weight: 900;
   margin-top: 10px;
@@ -40,6 +45,11 @@
 }
 
 @media (min-width: 400px) {
+  .FirstPanel {
+    padding-top: 25vh;
+    height: 50vh;
+  }
+
   .NamePart {
     font-size: 30px;
   }

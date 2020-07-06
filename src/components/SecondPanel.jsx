@@ -1,12 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "styles/SecondPanel.scss";
 
 const SecondPanel = () => {
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 900);
+
+  const updateBackground = () => {
+    setDesktop(window.innerWidth > 900);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", updateBackground);
+    return () => window.removeEventListener("resize", updateBackground);
+  });
+
+  const polygonHeight = 200;
+  let polygonAngle = isDesktop ? 20 : 40;
+  const polygonPoints =
+    "0," +
+    polygonAngle +
+    " 200,0 200," +
+    polygonHeight +
+    " 100," +
+    (polygonHeight + 30) +
+    " 0," +
+    polygonHeight;
+
   return (
     <div className="SecondPanel">
       <div className="mySVG">
         <svg viewBox="0 0 200 230">
-          <polygon points="0,40 200,0 200,200 100,230 0,200" />
+          <polygon points={polygonPoints} />
         </svg>
       </div>
       <div className="content">
