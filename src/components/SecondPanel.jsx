@@ -4,75 +4,37 @@ import SectionTitle from "components/SectionTitle";
 
 const SecondPanel = () => {
   const [isDesktop, setIsDesktop] = useState(document.body.clientWidth > 900);
-  const [innerWidth, setInnerWidth] = useState(document.body.clientWidth);
-  const [polygonHeight, setPolygonHeight] = useState(800);
-  const [polygonAngle, setPolygonAngle] = useState(isDesktop ? 150 : 100);
+  const [polygonAngle, setPolygonAngle] = useState(isDesktop ? 2 : 2);
   const [polygonPoints, setPolygonPoints] = useState(
-    "0," +
-      polygonAngle +
-      " " +
-      innerWidth +
-      ",0 " +
-      innerWidth +
-      "," +
-      polygonHeight +
-      " " +
-      innerWidth / 2 +
-      "," +
-      (polygonHeight + 70) +
-      " 0," +
-      polygonHeight
+    "0," + polygonAngle + " 100,0 100,100 50,110 0,100"
   );
 
   const updateBackground = () => {
-    setIsDesktop(innerWidth > 900);
-  };
-
-  const updateInnerWidth = () => {
-    setInnerWidth(document.body.clientWidth);
-  };
-
-  const updatePolygonHeight = () => {
-    let targetHeight;
-    if (innerWidth > 1184) {
-      targetHeight = 700;
-    } else if (innerWidth > 882) {
-      targetHeight = 1100;
-    } else {
-      targetHeight = 1400;
-    }
-    setPolygonHeight(targetHeight);
-    console.log(targetHeight);
+    setIsDesktop(window.innerWidth > 900);
   };
 
   const updatePolygonAngle = () => {
-    setPolygonAngle(isDesktop ? 150 : 100);
+    let angle;
+    if (window.innerWidth > 1200) {
+      angle = 20;
+    } else if (window.innerWidth > 900) {
+      angle = 12;
+    } else if (window.innerWidth > 400) {
+      angle = 9;
+    } else if (window.innerWidth > 300) {
+      angle = 7;
+    } else {
+      angle = 10;
+    }
+    setPolygonAngle(angle);
   };
 
   const updatePolygonPoints = () => {
-    setPolygonPoints(
-      "0," +
-        polygonAngle +
-        " " +
-        innerWidth +
-        ",0 " +
-        innerWidth +
-        "," +
-        polygonHeight +
-        " " +
-        innerWidth / 2 +
-        "," +
-        (polygonHeight + 70) +
-        " 0," +
-        polygonHeight
-    );
-    console.log(polygonHeight);
+    setPolygonPoints("0," + polygonAngle + " 100,0 100,100 50,110 0,100");
   };
 
   useEffect(() => {
     updateBackground();
-    updateInnerWidth();
-    updatePolygonHeight();
     updatePolygonAngle();
     updatePolygonPoints();
   });
@@ -80,16 +42,6 @@ const SecondPanel = () => {
   useEffect(() => {
     window.addEventListener("resize", updateBackground);
     return () => window.removeEventListener("resize", updateBackground);
-  });
-
-  useEffect(() => {
-    window.addEventListener("resize", updateInnerWidth);
-    return () => window.removeEventListener("resize", updateInnerWidth);
-  });
-
-  useEffect(() => {
-    window.addEventListener("resize", updatePolygonHeight);
-    return () => window.removeEventListener("resize", updatePolygonHeight);
   });
 
   useEffect(() => {
@@ -105,7 +57,12 @@ const SecondPanel = () => {
   return (
     <div className="SecondPanel">
       <div className="mySVG">
-        <svg width={innerWidth} height={polygonHeight + 70}>
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 100 110"
+          preserveAspectRatio="none"
+        >
           <polygon points={polygonPoints} />
         </svg>
       </div>

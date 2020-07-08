@@ -45,6 +45,10 @@ svg polygon {
     width: 280px;
     margin-bottom: 30px;
   }
+
+  .mySVG {
+    height: 1300px;
+  }
 }
 
 @media (min-width: 350px) {
@@ -53,6 +57,10 @@ svg polygon {
     width: 300px;
     margin-bottom: 30px;
   }
+
+  .mySVG {
+    height: 1400px;
+  }
 }
 
 @media (min-width: 400px) {
@@ -60,6 +68,10 @@ svg polygon {
     height: 350px;
     width: 350px;
     margin-bottom: 30px;
+  }
+
+  .mySVG {
+    height: 1600px;
   }
 }
 
@@ -71,14 +83,22 @@ svg polygon {
     align-content: space-around;
     height: 900px;
   }
+
+  .mySVG {
+    height: 1300px;
+  }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   .projectList {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: space-between;
     height: 500px;
+  }
+
+  .mySVG {
+    height: 800px;
   }
 }
