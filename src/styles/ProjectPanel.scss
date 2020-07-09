@@ -1,0 +1,22 @@
+@import "variables";
+
+.ProjectPanel {
+  width: $project-panel-width * 1px;
+  height: $project-panel-width * $project-panel-ratio * 1px;
+  background-position-x: center;
+  background-size: cover;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.coverPanel {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.coverPanel:hover {
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+}

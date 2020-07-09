@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "styles/SecondPanel.scss";
 import SectionTitle from "components/SectionTitle";
+import ProjectPanel from "components/ProjectPanel";
+import task_manager from "graphics/task_manager.png";
+import portfolio_app from "graphics/portfolio_app.png";
 
 const SecondPanel = () => {
   const [isDesktop, setIsDesktop] = useState(document.body.clientWidth > 900);
@@ -15,7 +18,7 @@ const SecondPanel = () => {
 
   const updatePolygonAngle = () => {
     let angle;
-    if (window.innerWidth > 1200) {
+    if (window.innerWidth > 1300) {
       angle = 20;
     } else if (window.innerWidth > 900) {
       angle = 12;
@@ -69,9 +72,9 @@ const SecondPanel = () => {
       <div className="content">
         <SectionTitle text="PROJECTS" />
         <div className="projectList">
-          <div className="projectPanel">AAAAAA</div>
-          <div className="projectPanel">BBBBBB</div>
-          <div className="projectPanel">CCCCCC</div>
+          <ProjectPanel image={task_manager} />
+          <ProjectPanel image={portfolio_app} />
+          <ProjectPanel image={task_manager} />
         </div>
       </div>
     </div>

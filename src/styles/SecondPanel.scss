@@ -23,15 +23,6 @@ svg polygon {
   display: flex;
 }
 
-.projectPanel {
-  height: 400px;
-  width: 400px;
-  border: solid;
-  border-color: #000000;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
 @media (min-width: 320px) {
   .projectList {
     flex-direction: column;
@@ -40,65 +31,61 @@ svg polygon {
     align-items: center;
   }
 
-  .projectPanel {
-    height: 280px;
-    width: 280px;
-    margin-bottom: 30px;
-  }
-
   .mySVG {
     height: 1300px;
   }
 }
 
 @media (min-width: 350px) {
-  .projectPanel {
-    height: 300px;
-    width: 300px;
-    margin-bottom: 30px;
-  }
-
   .mySVG {
     height: 1400px;
   }
 }
 
-@media (min-width: 400px) {
-  .projectPanel {
-    height: 350px;
-    width: 350px;
-    margin-bottom: 30px;
-  }
-
-  .mySVG {
-    height: 1600px;
-  }
-}
-
-@media (min-width: 900px) {
+@media (min-width: (1 * $project-panel-width) + (2 * $project-panel-margins) + $scroll-bar-width * 1px) {
   .projectList {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: space-around;
-    height: 900px;
+    height: (3 * $project-panel-width * $project-panel-ratio) +
+      (6 * $project-panel-margins) * 1px;
   }
 
   .mySVG {
-    height: 1300px;
+    height: 400 + (3 * $project-panel-width * $project-panel-ratio) +
+      (6 * $project-panel-margins) * 1px;
   }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: (2 * $project-panel-width) + (4 * $project-panel-margins) + $scroll-bar-width * 1px) {
+  .projectList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    height: (2 * $project-panel-width * $project-panel-ratio) +
+      (4 * $project-panel-margins) * 1px;
+  }
+
+  .mySVG {
+    height: 400 + (2 * $project-panel-width * $project-panel-ratio) +
+      (4 * $project-panel-margins) * 1px;
+  }
+}
+
+@media (min-width: (3 * $project-panel-width) + (6 * $project-panel-margins) + $scroll-bar-width * 1px) {
   .projectList {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: space-between;
-    height: 500px;
+    height: ($project-panel-width * $project-panel-ratio) +
+      (2 * $project-panel-margins) * 1px;
   }
 
   .mySVG {
-    height: 800px;
+    height: 400 + ($project-panel-width * $project-panel-ratio) +
+      (2 * $project-panel-margins) * 1px;
   }
 }
