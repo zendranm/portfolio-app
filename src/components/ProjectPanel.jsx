@@ -7,7 +7,7 @@ const ProjectPanel = (props) => {
       className="ProjectPanel"
       style={{ backgroundImage: `url(${props.image})` }}
     >
-      <div className="coverPanel">AAA</div>
+      <div className="coverPanel">{props.text}</div>
     </div>
   );
 };

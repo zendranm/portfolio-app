@@ -73,9 +73,15 @@ const SecondPanel = () => {
       <div className="content">
         <SectionTitle text="PROJECTS" />
         <div className="projectList">
-          <ProjectPanel image={task_manager} />
-          <ProjectPanel image={msc} />
-          <ProjectPanel image={portfolio_app} />
+          <ProjectPanel
+            image={task_manager}
+            text="Task Manager - organize all Your tasks in a convenient way"
+          />
+          <ProjectPanel
+            image={msc}
+            text="Research on methods of changing objects in images using Deepfake technology"
+          />
+          <ProjectPanel image={portfolio_app} text="My portfolio" />
         </div>
       </div>
     </div>
