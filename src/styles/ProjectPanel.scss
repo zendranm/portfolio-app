@@ -21,3 +21,17 @@
   background: rgba(0, 0, 0, 0.7);
   opacity: 1;
 }
+
+@media (min-width: 320px) {
+  .ProjectPanel {
+    width: $project-panel-width * 0.7 * 1px;
+    height: $project-panel-width * $project-panel-ratio * 0.7 * 1px;
+  }
+}
+
+@media (min-width: $project-panel-width + ($project-panel-margins * 2) + $scroll-bar-width * 1px) {
+  .ProjectPanel {
+    width: $project-panel-width * 1px;
+    height: $project-panel-width * $project-panel-ratio * 1px;
+  }
+}
