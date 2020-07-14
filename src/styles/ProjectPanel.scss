@@ -11,10 +11,24 @@
 
 .coverPanel {
   opacity: 0;
-  height: calc(100% - 40px);
+  height: calc(100% - 60px);
   width: calc(100% - 40px);
   border-radius: 10px;
   padding: 20px;
+  padding-bottom: 40px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  font-size: 100px;
 }
 
 .coverPanel:hover {
