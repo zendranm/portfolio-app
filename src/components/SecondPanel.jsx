@@ -13,13 +13,25 @@ const SecondPanel = () => {
       <div className="projectList">
         <ProjectPanel
           image={task_manager}
-          text="Task Manager - organize all Your tasks in a convenient way"
+          title="Task Manager"
+          text="Organize all Your tasks in a convenient way"
+          linkLive="https://demo-task-manager.netlify.app/#/"
+          linkGithub="https://github.com/zendranm/task-manager"
         />
         <ProjectPanel
           image={msc}
+          title="Deepfake Research"
           text="Research on methods of changing objects in images using Deepfake technology"
+          linkLive=""
+          linkGithub="https://github.com/zendranm/MSC"
         />
-        <ProjectPanel image={portfolio_app} text="My portfolio" />
+        <ProjectPanel
+          image={portfolio_app}
+          title="My Portfolio"
+          text="Exactly the same You're checking out right now"
+          linkLive=""
+          linkGithub="https://github.com/zendranm/portfolio-app"
+        />
       </div>
     </div>
   );

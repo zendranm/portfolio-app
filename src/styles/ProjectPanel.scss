@@ -5,35 +5,48 @@
   height: $project-panel-width * $project-panel-ratio * 1px;
   background-position-x: center;
   background-size: cover;
-  border-radius: 10px;
   margin: 20px;
+  overflow: hidden;
 }
 
 .coverPanel {
-  opacity: 0;
-  height: calc(100% - 60px);
+  height: calc(100% - 40px);
   width: calc(100% - 40px);
-  border-radius: 10px;
+  background: $body-color;
+  color: $font-color-1;
+  top: 100%;
   padding: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   font-size: 20px;
+  position: relative;
+  transition: all 0.3s ease-out;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
 
+.ProjectPanel:hover > .coverPanel {
+  top: 0;
+}
+
+.header {
+  height: 50%;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
 .buttons {
+  height: 50%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
   font-size: 100px;
-}
-
-.coverPanel:hover {
-  background: rgba(0, 0, 0, 0.7);
-  opacity: 1;
 }
 
 @media (min-width: 320px) {
