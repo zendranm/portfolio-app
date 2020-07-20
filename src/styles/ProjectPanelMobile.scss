@@ -1,0 +1,34 @@
+@import "variables";
+
+.ProjectPanelMobile {
+  margin: 20px;
+}
+
+.imagePart {
+  width: $project-panel-width * 0.7 * 1px;
+  height: $project-panel-width * 0.4 * $project-panel-ratio * 1px;
+  background-position-x: center;
+  background-size: cover;
+}
+.contentPart {
+  background-color: #cccccc;
+  width: calc((#{$project-panel-width} * 0.7 * 1px) - 40px);
+  color: $font-color-1;
+  font-size: 15px;
+  padding: 20px;
+
+  .title {
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    font-size: 50px;
+  }
+}

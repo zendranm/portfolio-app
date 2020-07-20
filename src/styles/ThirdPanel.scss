@@ -1,10 +1,31 @@
-// @import "variables";
+@import "variables";
 
-// .ThirdPanel {
-//   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 100 110' preserveAspectRatio='none'><polygon points='0,10 100,0 100,100 50,110 0,100' style='fill:%23143052'></polygon></svg>");
-//   width: 100%;
-//   // height: 1520px;
-//   padding-top: 25vh;
-//   padding-bottom: 25vh;
-//   color: $font-color-2;
-// }
+.ThirdPanel {
+  margin-top: 10vh;
+  width: 100%;
+}
+
+.aboutme {
+  width: calc(100% - 200px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.image {
+  width: 300px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  width: 600px;
+  font-size: 20px;
+}

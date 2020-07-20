@@ -1,27 +1,30 @@
 import React from "react";
 import "styles/ThirdPanel.scss";
+import SectionTitle from "components/SectionTitle";
+import image from "graphics/image.jpg";
 
 const ThirdPanel = () => {
   return (
     <div className="ThirdPanel">
-      I like pancakes ... but also Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit. Nullam quis pellentesque libero, a sollicitudin diam.
-      Nunc at dolor lacus. Etiam sed venenatis nibh. Nunc vel nisl felis. Fusce
-      porta eu leo at vehicula. Ut tincidunt, nibh id pretium bibendum, libero
-      lectus hendrerit nisi, id consequat nisi eros in metus. In pellentesque
-      euismod sapien non molestie. Sed sed odio fermentum, finibus justo quis,
-      lobortis massa. Nullam pharetra felis eu lacus elementum elementum. Nam in
-      tincidunt est. Etiam id tempor felis, at imperdiet orci. Morbi sit amet
-      tellus tincidunt, vestibulum tortor sed, tempus sem. Curabitur eu sem non
-      nunc malesuada pellentesque at eu purus. Proin sit amet facilisis elit.
-      Nam maximus metus massa, ut rutrum dolor elementum sit amet. Maecenas
-      efficitur, leo id tincidunt suscipit, erat turpis rutrum est, sed blandit
-      nulla felis at enim. Vivamus pulvinar nisl lorem, a placerat tellus
-      suscipit ac. Donec mollis sapien arcu, a sollicitudin diam aliquam sit
-      amet. In vitae ullamcorper turpis, non vestibulum risus. Suspendisse magna
-      nunc, mattis sit amet dui vitae, volutpat ullamcorper tortor. Nulla eget
-      nibh ligula. Aenean suscipit eu mi a euismod. Sed in libero vel tellus
-      egestas laoreet.
+      <SectionTitle text="ABOUT ME" />
+      <div className="aboutme">
+        <div className="image">
+          <img src={image} alt="logo" />
+        </div>
+        <div className="content">
+          I am a student of the last year of Master’s degree at Wrocław
+          University of Science and Technology. I study Computer Science in
+          English at the faculty of Electronics. In my master’s thesis I
+          analyzed the problem of deepfake generation using artificial neural
+          networks. During my studies I developed skills of teamwork, time
+          management, effective communication and flexibility. I am eager to get
+          new experience and learn new technologies. I had opportunity to take
+          part in student internship at well-known international company as a
+          front-end developer. Thanks to that I developed my programming skills,
+          learned how to work in Scrum methodology and gained experience in
+          working in large, international team.
+        </div>
+      </div>
     </div>
   );
 };
