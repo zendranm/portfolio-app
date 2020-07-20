@@ -12,7 +12,7 @@
   background-size: cover;
 }
 .contentPart {
-  background-color: #cccccc;
+  background-color: $tertiary-color;
   width: calc((#{$project-panel-width} * 0.7 * 1px) - 40px);
   height: 150px;
   color: $font-color-1;

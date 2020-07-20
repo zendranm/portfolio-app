@@ -62,6 +62,10 @@
     right: 0;
   }
 
+  .NavBar:hover {
+    background-color: $secondary-color;
+  }
+
   .LeftSide {
     flex-direction: row;
     justify-content: space-evenly;
