@@ -1,7 +1,8 @@
 @import "variables";
 
 .ProjectPanelMobile {
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .imagePart {
@@ -13,9 +14,14 @@
 .contentPart {
   background-color: #cccccc;
   width: calc((#{$project-panel-width} * 0.7 * 1px) - 40px);
+  height: 150px;
   color: $font-color-1;
   font-size: 15px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 
   .title {
     font-weight: 900;
@@ -23,8 +29,12 @@
     margin-bottom: 20px;
   }
 
+  .header {
+    height: auto;
+  }
+
   .buttons {
-    height: 50%;
+    height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
