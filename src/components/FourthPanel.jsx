@@ -1,6 +1,7 @@
 import React from "react";
 import "styles/FourthPanel.scss";
 import SectionTitle from "components/SectionTitle";
+import EmailPanel from "components/EmailPanel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faFileDownload } from "@fortawesome/free-solid-svg-icons";
@@ -9,7 +10,7 @@ const FourthPanel = () => {
   return (
     <div className="FourthPanel">
       <SectionTitle text="CONTACT" />
-      <div className="test">
+      <div className="centerContext">
         <div className="contactOptions">
           <div className="contactOption">
             <div className="contactIcon">
@@ -37,7 +38,7 @@ const FourthPanel = () => {
           </div>
         </div>
       </div>
-      <div>AAA</div>
+      <EmailPanel />
     </div>
   );
 };
