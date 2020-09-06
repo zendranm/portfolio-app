@@ -24,6 +24,11 @@
   transform: translateX(-300%);
 }
 
+img {
+  height: calc(100vh - 250px);
+  min-height: 400px;
+}
+
 @media (min-width: 320px) {
   .NamePart {
     font-size: 20px;
