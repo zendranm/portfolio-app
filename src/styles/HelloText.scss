@@ -1,3 +1,5 @@
+@import "variables";
+
 .HelloText {
   width: 300px;
 }
@@ -16,7 +18,7 @@
 
 svg line,
 circle {
-  stroke: #000000;
+  stroke: $font-color-1;
   stroke-width: 36;
 }
 
