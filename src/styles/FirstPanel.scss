@@ -1,13 +1,15 @@
 @import "variables";
 
 .FirstPanel {
-  height: 100vh;
+  height: 110vh;
   width: 100%;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 100 100' preserveAspectRatio='none'><polygon points='0,100 20,40 30,60 50,10 70,60 80,10 100,60 100,100 0,100' style='fill:#{$primary-color-url}'></polygon></svg>");
+  position: relative;
+  // background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 100 100' preserveAspectRatio='none'><polygon points='0,30 20,10 30,30 40,5 50,40 60,10 70,30 90,5 100,30 100,100 0,100' style='fill:#{$primary-color-url}'></polygon></svg>");
 
   .content {
+    // height: calc(100% - 10vh);
     height: 100%;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -15,7 +17,7 @@
     justify-content: space-between;
     .leftBox {
       width: 50%;
-      padding-top: 100px;
+      padding-top: 300px;
     }
 
     .rightBox {
@@ -27,6 +29,15 @@
       }
     }
   }
+}
+
+.bottomV {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 100 100' preserveAspectRatio='none'><polygon points='0,20 50,100 100,20 100,100 0,100' style='fill:#{$secondary-color-url}'></polygon></svg>");
 }
 
 .NamePart {
