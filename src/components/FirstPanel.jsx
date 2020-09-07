@@ -8,9 +8,11 @@ const FirstPanel = () => {
     <div className="FirstPanel">
       <div className="content">
         <div className="leftBox">
-          <HelloText />
-          {/* <div className="NamePart">I'M MICHAŁ ZENDRAN</div> */}
-          {/* <div className="JobPart">FRONTEND DEVELOPER</div> */}
+          <div className="mainText">
+            <HelloText />
+            <div className="NamePart">I'M MICHAŁ</div>
+            <div className="JobPart">FRONTEND DEVELOPER</div>
+          </div>
         </div>
         <div className="rightBox">
           <img src={logo} alt="" />

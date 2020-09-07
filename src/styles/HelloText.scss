@@ -7,11 +7,14 @@
     position: absolute;
     height: 120px;
     width: 500px;
-    background-color: #000000;
+    background-color: $secondary-color;
     z-index: -1;
     top: 40px;
     left: -50px;
     box-shadow: -15px 17px 80px -5px #000000;
+    animation: 0.4s slide-right 0.2s forwards;
+    transform: translateX(-300%);
+    white-space: nowrap;
   }
 
   .text {
@@ -24,11 +27,21 @@
   .HelloText {
     width: 300px;
   }
+
+  .tile {
+    width: 300px;
+    height: 70px;
+  }
 }
 
 @media (min-width: 900px) {
   .HelloText {
     width: 500px;
+  }
+
+  .tile {
+    width: 500px;
+    height: 120px;
   }
 }
 
@@ -43,6 +56,7 @@ circle {
   stroke-dashoffset: 0;
   stroke-dasharray: 100%;
   animation: dash 3.5s linear;
+  animation-duration: 3s;
 }
 
 .path#h1 {

@@ -4,10 +4,8 @@
   height: 110vh;
   width: 100%;
   position: relative;
-  // background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 100 100' preserveAspectRatio='none'><polygon points='0,30 20,10 30,30 40,5 50,40 60,10 70,30 90,5 100,30 100,100 0,100' style='fill:#{$primary-color-url}'></polygon></svg>");
 
   .content {
-    // height: calc(100% - 10vh);
     height: 100%;
     width: 70%;
     margin: 0 auto;
@@ -15,17 +13,24 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+
     .leftBox {
       width: 50%;
       padding-top: 300px;
+      z-index: 0;
+      .mainText {
+        position: relative;
+      }
     }
 
     .rightBox {
       height: 100%;
       width: 50%;
+      z-index: -1;
       img {
         height: 100%;
         float: right;
+        z-index: -9;
         filter: grayscale(1) drop-shadow(29px -10px 19px rgba(0, 0, 0, 0.5));
       }
     }
@@ -42,22 +47,33 @@
 }
 
 .NamePart {
+  background-color: $secondary-color;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
   font-weight: 900;
-  margin-top: 10px;
-  animation: 0.4s slide-right 1.6s forwards;
+  font-size: 50px;
+  margin-top: 15px;
+  position: absolute;
+  left: -90px;
+  animation: 0.4s slide-right 0.6s forwards;
   transform: translateX(-300%);
+  white-space: nowrap;
 }
 
 .JobPart {
-  background-color: $primary-color;
-  color: $font-color-2;
-  padding: 5px;
-  margin-top: 10px;
-  border-radius: 4px;
+  background-color: $secondary-color;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-weight: 900;
-  display: inline-block;
-  animation: 0.4s slide-right 1.8s forwards;
+  font-size: 50px;
+  position: absolute;
+  top: 210px;
+  left: 40px;
+  animation: 0.4s slide-right 0.9s forwards;
   transform: translateX(-300%);
+  white-space: nowrap;
 }
 
 @media (min-width: 320px) {
@@ -70,30 +86,40 @@
   }
 }
 
-@media (min-width: 375px) {
+@media (min-width: 900px) {
   .NamePart {
-    font-size: 25px;
+    font-size: 50px;
   }
 
   .JobPart {
-    font-size: 25px;
+    font-size: 50px;
   }
 }
 
-@media (min-width: 400px) {
-  .FirstPanel {
-    // padding-top: 25vh;
-    // height: 50vh;
-  }
+// @media (min-width: 375px) {
+//   .NamePart {
+//     font-size: 25px;
+//   }
 
-  .NamePart {
-    font-size: 30px;
-  }
+//   .JobPart {
+//     font-size: 25px;
+//   }
+// }
 
-  .JobPart {
-    font-size: 30px;
-  }
-}
+// @media (min-width: 400px) {
+//   .FirstPanel {
+//     // padding-top: 25vh;
+//     // height: 50vh;
+//   }
+
+//   .NamePart {
+//     font-size: 30px;
+//   }
+
+//   .JobPart {
+//     font-size: 30px;
+//   }
+// }
 
 @keyframes slide-right {
   to {
