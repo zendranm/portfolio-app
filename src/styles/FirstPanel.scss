@@ -16,7 +16,7 @@
 
     .leftBox {
       width: 50%;
-      padding-top: 300px;
+      padding-top: 30vh;
       z-index: 0;
       .mainText {
         position: relative;
@@ -77,6 +77,23 @@
 }
 
 @media (min-width: 320px) {
+  .FirstPanel {
+    .content {
+      justify-content: center;
+
+      .leftBox {
+        width: 100%;
+      }
+
+      .rightBox {
+        width: 0%;
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+
   .NamePart {
     font-size: 20px;
   }
@@ -87,6 +104,16 @@
 }
 
 @media (min-width: 900px) {
+  .FirstPanel {
+    .content {
+      .rightBox {
+        img {
+          display: block;
+        }
+      }
+    }
+  }
+
   .NamePart {
     font-size: 50px;
   }
@@ -95,31 +122,6 @@
     font-size: 50px;
   }
 }
-
-// @media (min-width: 375px) {
-//   .NamePart {
-//     font-size: 25px;
-//   }
-
-//   .JobPart {
-//     font-size: 25px;
-//   }
-// }
-
-// @media (min-width: 400px) {
-//   .FirstPanel {
-//     // padding-top: 25vh;
-//     // height: 50vh;
-//   }
-
-//   .NamePart {
-//     font-size: 30px;
-//   }
-
-//   .JobPart {
-//     font-size: 30px;
-//   }
-// }
 
 @keyframes slide-right {
   to {
