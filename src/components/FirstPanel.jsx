@@ -7,6 +7,7 @@ const FirstPanel = () => {
   return (
     <div className="FirstPanel">
       <div className="content">
+        <div />
         <div className="leftBox">
           <div className="mainText">
             <HelloText />

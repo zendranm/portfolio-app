@@ -4,7 +4,7 @@ import "styles/HelloText.scss";
 const HelloText = () => {
   return (
     <div className="HelloText">
-      <div className="tile"></div>
+      <div className="tile" />
       <div className="text">
         <svg viewBox="0 0 590 140">
           <g>

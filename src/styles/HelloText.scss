@@ -5,12 +5,8 @@
 
   .tile {
     position: absolute;
-    height: 120px;
-    width: 500px;
     background-color: $secondary-color;
     z-index: -1;
-    top: 40px;
-    left: -50px;
     box-shadow: -15px 17px 80px -5px #000000;
     animation: 0.4s slide-right 0.2s forwards;
     transform: translateX(-300%);
@@ -25,23 +21,25 @@
 
 @media (min-width: 320px) {
   .HelloText {
-    width: 300px;
-  }
-
-  .tile {
-    width: 300px;
-    height: 70px;
+    width: 250px;
+    .tile {
+      height: 60px;
+      width: 250px;
+      top: 20px;
+      left: -30px;
+    }
   }
 }
 
 @media (min-width: 900px) {
   .HelloText {
     width: 500px;
-  }
-
-  .tile {
-    width: 500px;
-    height: 120px;
+    .tile {
+      width: 500px;
+      height: 120px;
+      top: 40px;
+      left: -50px;
+    }
   }
 }
 
