@@ -67,6 +67,10 @@
       }
       .rightBox {
         width: 0;
+
+        img {
+          display: none;
+        }
       }
     }
   }
@@ -82,26 +86,14 @@
   }
 }
 
-@media (min-width: 400px) {
-  .FirstPanel {
-    .content {
-      width: 100%;
-      .leftBox {
-        width: 70%;
-      }
-      .rightBox {
-        width: 0;
-      }
-    }
-  }
-  .NamePart {
-    font-size: 20px;
-    margin-top: 0px;
-    left: -40px;
-  }
+@media (min-width: 370px) {
   .JobPart {
-    font-size: 20px;
-    top: 100px;
+    left: -10px;
+  }
+}
+
+@media (min-width: 400px) {
+  .JobPart {
     left: 20px;
   }
 }
@@ -115,6 +107,10 @@
       }
       .rightBox {
         width: 50%;
+
+        img {
+          display: inline;
+        }
       }
     }
   }
