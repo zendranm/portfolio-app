@@ -6,6 +6,7 @@ import image from "graphics/image_cropped.jpg";
 const ThirdPanel = () => {
   return (
     <div className="ThirdPanel">
+      <div className="bottomV" />
       <SectionTitle text="ABOUT ME" />
       <div className="aboutme">
         <div className="image">

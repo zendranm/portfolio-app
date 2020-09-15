@@ -12,7 +12,9 @@ const FirstPanel = () => {
           <div className="mainText">
             <HelloText />
             <div className="NamePart">I'M MICHAŁ</div>
+            <div className="NamePart-shadow">I'M MICHAŁ</div>
             <div className="JobPart">FRONTEND DEVELOPER</div>
+            <div className="JobPart-shadow">FRONTEND DEVELOPER</div>
           </div>
         </div>
         <div className="rightBox">

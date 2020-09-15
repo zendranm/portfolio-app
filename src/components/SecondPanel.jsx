@@ -10,7 +10,7 @@ const SecondPanel = () => {
   return (
     <div className="SecondPanel">
       <SectionTitle text="PROJECTS" />
-      <div className="projectList">
+      {/* <div className="projectList">
         <ProjectPanel
           image={task_manager}
           title="Task Manager"
@@ -32,7 +32,7 @@ const SecondPanel = () => {
           linkLive=""
           linkGithub="https://github.com/zendranm/portfolio-app"
         />
-      </div>
+      </div> */}
     </div>
   );
 };

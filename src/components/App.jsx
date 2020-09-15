@@ -28,9 +28,9 @@ const App = () => {
       {navOption}
       <div className="MainPanel">
         <FirstPanel />
-        {/* <SecondPanel />
+        <SecondPanel />
         <ThirdPanel />
-        <FourthPanel /> */}
+        {/* <FourthPanel /> */}
       </div>
     </div>
   );

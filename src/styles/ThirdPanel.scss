@@ -1,9 +1,16 @@
 @import "variables";
 
 .ThirdPanel {
-  margin-top: 10vh;
+  background-color: $tertiary-color;
+  color: $font-color-2;
   width: 100%;
 }
+
+// @media (min-width: 320px) {
+//   .SecondPanel {
+//     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 100 110' preserveAspectRatio='none'><polygon points='0,0 100,0 100,100 50,110 0,100' style='fill:#{$secondary-color-url}'></polygon></svg>");
+//   }
+// }
 
 .aboutme {
   width: calc(100% - 20px);

@@ -1,6 +1,85 @@
+@import "variables";
+
 .SectionTitle {
-  text-align: center;
-  margin-bottom: 50px;
-  font-size: 30px;
-  font-weight: 700;
+  position: relative;
+  margin: 0 auto;
+  width: fit-content;
+  height: 100%;
+  z-index: 0;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .text {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    z-index: 0;
+  }
+
+  .tile1 {
+    height: 50%;
+    background-color: $primary-color;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .tile2 {
+    height: 50%;
+    background-color: $primary-color;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 320px) {
+  .SectionTitle {
+    .tile1 {
+      width: 150px;
+      left: -50px;
+    }
+    .tile2 {
+      width: 150px;
+      right: -50px;
+    }
+  }
+}
+
+@media (min-width: 370px) {
+  .SectionTitle {
+    .tile1 {
+      width: 170px;
+      left: -70px;
+    }
+    .tile2 {
+      width: 170px;
+      right: -70px;
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  .SectionTitle {
+    .tile1 {
+      width: 190px;
+      left: -90px;
+    }
+    .tile2 {
+      width: 190px;
+      right: -90px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .SectionTitle {
+    .tile1 {
+      width: 500px;
+      left: -400px;
+    }
+    .tile2 {
+      width: 400px;
+      right: -300px;
+    }
+  }
 }
