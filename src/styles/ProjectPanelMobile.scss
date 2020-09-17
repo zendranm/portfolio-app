@@ -1,44 +1,44 @@
-@import "variables";
+// @import "variables";
 
-.ProjectPanelMobile {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+// .ProjectPanelMobile {
+//   margin-top: 20px;
+//   margin-bottom: 20px;
+// }
 
-.imagePart {
-  width: $project-panel-width * 0.7 * 1px;
-  height: $project-panel-width * 0.4 * $project-panel-ratio * 1px;
-  background-position-x: center;
-  background-size: cover;
-}
-.contentPart {
-  background-color: $tertiary-color;
-  width: calc((#{$project-panel-width} * 0.7 * 1px) - 40px);
-  height: 150px;
-  color: $font-color-1;
-  font-size: 15px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+// .imagePart {
+//   width: $project-panel-width * 0.7 * 1px;
+//   height: $project-panel-width * 0.4 * $project-panel-ratio * 1px;
+//   background-position-x: center;
+//   background-size: cover;
+// }
+// .contentPart {
+//   background-color: $tertiary-color;
+//   width: calc((#{$project-panel-width} * 0.7 * 1px) - 40px);
+//   height: 150px;
+//   color: $font-color-1;
+//   font-size: 15px;
+//   padding: 20px;
+//   display: flex;
+//   flex-direction: column;
+//   flex-wrap: nowrap;
+//   justify-content: space-between;
 
-  .title {
-    font-weight: 900;
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
+//   .title {
+//     font-weight: 900;
+//     font-size: 20px;
+//     margin-bottom: 20px;
+//   }
 
-  .header {
-    height: auto;
-  }
+//   .header {
+//     height: auto;
+//   }
 
-  .buttons {
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    font-size: 50px;
-  }
-}
+//   .buttons {
+//     height: auto;
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: nowrap;
+//     justify-content: space-evenly;
+//     font-size: 50px;
+//   }
+// }

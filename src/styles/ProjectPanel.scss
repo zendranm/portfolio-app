@@ -1,22 +1,22 @@
 @import "variables";
 
 .ProjectPanel {
-  width: $project-panel-width * 1px;
-  height: $project-panel-width * $project-panel-ratio * 1px;
-  background-position-x: center;
+  width: calc(16 * 30px);
+  height: calc(9 * 30px);
   background-size: cover;
   margin: 20px;
   overflow: hidden;
+  border-radius: 9px;
+  box-shadow: -19px -16px 25px -4px rgba(0, 0, 0, 0.75);
 }
 
 .coverPanel {
   height: calc(100% - 40px);
   width: calc(100% - 40px);
-  background: $primary-color;
-  color: $font-color-1;
-  top: 100%;
   padding: 20px;
-  padding-bottom: 20px;
+  background: #e6e6e6;
+  color: $font-color-2;
+  top: 100%;
   font-size: 20px;
   position: relative;
   transition: all 0.3s ease-out;
@@ -49,16 +49,16 @@
   font-size: 100px;
 }
 
-@media (min-width: 320px) {
-  .ProjectPanel {
-    width: $project-panel-width * 0.7 * 1px;
-    height: $project-panel-width * $project-panel-ratio * 0.7 * 1px;
-  }
-}
+// @media (min-width: 320px) {
+//   .ProjectPanel {
+//     width: $project-panel-width * 0.7 * 1px;
+//     height: $project-panel-width * $project-panel-ratio * 0.7 * 1px;
+//   }
+// }
 
-@media (min-width: $project-panel-width + ($project-panel-margins * 2) + $scroll-bar-width * 1px) {
-  .ProjectPanel {
-    width: $project-panel-width * 1px;
-    height: $project-panel-width * $project-panel-ratio * 1px;
-  }
-}
+// @media (min-width: $project-panel-width + ($project-panel-margins * 2) + $scroll-bar-width * 1px) {
+//   .ProjectPanel {
+//     width: $project-panel-width * 1px;
+//     height: $project-panel-width * $project-panel-ratio * 1px;
+//   }
+// }
