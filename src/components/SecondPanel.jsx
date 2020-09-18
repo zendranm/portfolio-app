@@ -22,7 +22,7 @@ const SecondPanel = () => {
         <ProjectPanel
           image={tmp_proj_img}
           title="Deepfake Research"
-          text="Research on methods of changing objects in images using Deepfake technology"
+          text="Comparison of Deepfake methods"
           linkLive=""
           linkGithub="https://github.com/zendranm/MSC"
         />
