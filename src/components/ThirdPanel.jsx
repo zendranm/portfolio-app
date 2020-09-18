@@ -1,6 +1,7 @@
 import React from "react";
 import "styles/ThirdPanel.scss";
 import SectionTitle from "components/SectionTitle";
+import SubSectionTitle from "components/SubSectionTitle";
 import image from "graphics/image_cropped.jpg";
 
 const ThirdPanel = () => {
@@ -8,22 +9,33 @@ const ThirdPanel = () => {
     <div className="ThirdPanel">
       <div className="upperV" />
       <SectionTitle text="ABOUT ME" />
-      <div className="aboutme">
-        <div className="image">
-          <img src={image} alt="logo" />
-        </div>
-        <div className="content">
-          I am a graduate of master studies at Wrocław University of Science and
-          Technology in the field of Computer Science in English at the faculty
-          of Electronics. In my master’s thesis I analyzed the problem of
-          deepfake generation using artificial neural networks. During my
-          studies I developed skills of teamwork, time management, effective
-          communication and flexibility. I am eager to get new experience and
-          learn new technologies. I had opportunity to take part in student
-          internship at well-known international company as a front-end
-          developer. Thanks to that I developed my programming skills, learned
-          how to work in Scrum methodology and gained experience in working in
-          large, international team.
+      <div className="aboutMe">
+        <div className="leftBox">{/* <img src={image} alt="logo" /> */}</div>
+        <div className="rightBox">
+          <div className="mainDescription">
+            Hi! I'm Michał, React Developer. Fresh out of college, but
+            experienced, I am looking for an opportunity to further develop my
+            skills in React and Frontend in general. I had the opportunity to
+            take part in a student internship at well-known international
+            company as a front-end developer. During this time I managed to
+            implement and deploy crucial application in React.
+          </div>
+          <div className="subDescription">
+            <SubSectionTitle text="Front-end Developer" />I like to code things
+            from scratch and love to see an idea becoming a live thing. Clean
+            code and elegant design is my ninja way.
+          </div>
+          <div className="subDescription">
+            <SubSectionTitle text="Background" />I obtained my engineer degree
+            in Control Engineering and Robotics but discovered that programming
+            brings me tons of satisfaction and obtained my master degree in
+            Computer Science.
+          </div>
+          <div className="subDescription">
+            <SubSectionTitle text="Hobbies" />I spend most of my spare time at
+            shredding on my guitars (almost for 10 years now) and on many
+            different sports (not pro at any of them but fun is fun).
+          </div>
         </div>
       </div>
     </div>
