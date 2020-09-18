@@ -1,8 +1,8 @@
 @import "variables";
 
 .ProjectPanel {
-  width: calc(16 * 30px);
-  height: calc(9 * 30px);
+  width: 16 * $project-panel-width * 1px;
+  height: 9 * $project-panel-width * 1px;
   background-size: cover;
   margin: 20px;
   overflow: hidden;
@@ -49,12 +49,12 @@
   font-size: 100px;
 }
 
-// @media (min-width: 320px) {
-//   .ProjectPanel {
-//     width: $project-panel-width * 0.7 * 1px;
-//     height: $project-panel-width * $project-panel-ratio * 0.7 * 1px;
-//   }
-// }
+@media (min-width: 320px) {
+  .ProjectPanel {
+    width: 100%;
+    height: calc((100% * 9) / 16);
+  }
+}
 
 // @media (min-width: $project-panel-width + ($project-panel-margins * 2) + $scroll-bar-width * 1px) {
 //   .ProjectPanel {
