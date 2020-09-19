@@ -5,6 +5,7 @@ const SubSectionTitle = (props) => {
   return (
     <div className="SubSectionTitle">
       <div>{props.text}</div>
+      <div className="tile1" />
     </div>
   );
 };

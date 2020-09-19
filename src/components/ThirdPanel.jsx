@@ -21,20 +21,28 @@ const ThirdPanel = () => {
             implement and deploy crucial application in React.
           </div>
           <div className="subDescription">
-            <SubSectionTitle text="Front-end Developer" />I like to code things
-            from scratch and love to see an idea becoming a live thing. Clean
-            code and elegant design is my ninja way.
+            <SubSectionTitle text="Front-end Developer" />
+            <div>
+              I like to code things from scratch and love to see an idea
+              becoming a live thing. Clean code and elegant design is my ninja
+              way.
+            </div>
           </div>
           <div className="subDescription">
-            <SubSectionTitle text="Background" />I obtained my engineer degree
-            in Control Engineering and Robotics but discovered that programming
-            brings me tons of satisfaction and obtained my master degree in
-            Computer Science.
+            <SubSectionTitle text="Background" />
+            <div>
+              I obtained my engineer degree in Control Engineering and Robotics
+              but discovered that programming brings me tons of satisfaction and
+              obtained my master degree in Computer Science.
+            </div>
           </div>
           <div className="subDescription">
-            <SubSectionTitle text="Hobbies" />I spend most of my spare time at
-            shredding on my guitars (almost for 10 years now) and on many
-            different sports (not pro at any of them but fun is fun).
+            <SubSectionTitle text="Hobbies" />
+            <div>
+              I spend most of my spare time at shredding on my guitars (almost
+              for 10 years now) and on many different sports (not pro at any of
+              them but fun is fun).
+            </div>
           </div>
         </div>
       </div>
