@@ -1,3 +1,18 @@
+## To-Do
+
+1. Add gradient to primary color panels.
+2. Change font for sectionTitles (and maybe in general too).
+3. Add loading screen when images load.
+4. ?Add sliding in sectionTitles animation on scroll?
+5. Prepare svg version of main photo.
+6. Prepare image for about me section.
+7. ?Add webpack?
+8. ?Add babel?
+9. Add info that machine learning is my hobby.
+10. Prepare images for project panels.
+11. Fix navbar design and logic.
+12. Finish contact panel.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
