@@ -5,7 +5,7 @@ import html5 from "icons/html5.svg";
 import css3 from "icons/css-3.svg";
 import javascript from "icons/javascript.svg";
 import typescript from "icons/typescript.svg";
-import react from "icons/react-2.svg";
+import react from "icons/react-1.svg";
 import redux from "icons/redux.svg";
 import router from "icons/react-router.svg";
 import webpack from "icons/webpack-icon.svg";

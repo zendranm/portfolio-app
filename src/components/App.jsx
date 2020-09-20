@@ -6,7 +6,8 @@ import FirstPanel from "components/FirstPanel";
 import SecondPanel from "components/SecondPanel";
 import ThirdPanel from "components/ThirdPanel";
 import FourthPanel from "components/FourthPanel";
-// import FifthPanel from "components/FifthPanel";
+import FifthPanel from "components/FifthPanel";
+
 const App = () => {
   const [isNavBarVisible, updateIsNavBarVisible] = useState(false);
 
@@ -32,7 +33,7 @@ const App = () => {
         <SecondPanel />
         <ThirdPanel />
         <FourthPanel />
-        {/* <FifthPanel /> */}
+        <FifthPanel />
       </div>
     </div>
   );

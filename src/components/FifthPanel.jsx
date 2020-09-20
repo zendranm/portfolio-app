@@ -10,35 +10,18 @@ const FifthPanel = () => {
   return (
     <div className="FifthPanel">
       <SectionTitle text="CONTACT" />
-      <div className="centerContext">
-        <div className="contactOptions">
-          <div className="contactOption">
-            <div className="contactIcon">
-              <FontAwesomeIcon icon={faLinkedin} />
-            </div>
-            <div className="contactText">linkedIn</div>
-          </div>
-          <div className="contactOption">
-            <div className="contactIcon">
-              <FontAwesomeIcon icon={faGithub} />
-            </div>
-            <div className="contactText">github</div>
-          </div>
-          <div className="contactOption">
-            <div className="contactIcon">
-              <FontAwesomeIcon icon={faEnvelope} />
-            </div>
-            <div className="contactText">zendran.m@gmail.com</div>
-          </div>
-          <div className="contactOption">
-            <div className="contactIcon">
-              <FontAwesomeIcon icon={faFileDownload} />
-            </div>
-            <div className="contactText">My CV</div>
-          </div>
+      <EmailPanel />
+      <div className="contactOptions">
+        <div className="contactIcon">
+          <FontAwesomeIcon icon={faLinkedin} />
+        </div>
+        <div className="contactIcon">
+          <FontAwesomeIcon icon={faGithub} />
+        </div>
+        <div className="contactIcon">
+          <FontAwesomeIcon icon={faEnvelope} />
         </div>
       </div>
-      <EmailPanel />
     </div>
   );
 };
