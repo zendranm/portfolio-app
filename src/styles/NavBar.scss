@@ -1,35 +1,28 @@
 @import "variables";
 
 .NavBar {
-  background-color: $primary-color;
-  color: $font-color-2;
+  background-color: $secondary-color;
+  color: $primary-color;
   font-size: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   animation: 0.2s slide-left 0s forwards;
-  transform: translateX(300%);
+  transform: translateY(-100%);
   position: fixed;
   z-index: 9999;
 }
 
 .LeftSide {
-  width: 90%;
   display: flex;
   flex-wrap: nowrap;
 }
 
 .RightSide {
-  width: 10%;
-}
-
-.CloseButton {
-  float: right;
-}
-
-.CloseButton:hover {
-  cursor: pointer;
+  .CloseButton:hover {
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 320px) {
@@ -41,10 +34,19 @@
   }
 
   .LeftSide {
+    width: 90%;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     padding-left: 10%;
+  }
+
+  .RightSide {
+    width: 10%;
+
+    .CloseButton:hover {
+      cursor: pointer;
+    }
   }
 
   .NavOption {
@@ -56,10 +58,10 @@
   .NavBar {
     padding: 10px;
     height: auto;
-    border-radius: 0 0 0 100px;
-    width: calc(100% - 20px);
+    width: 100%;
     top: 0;
     right: 0;
+    filter: drop-shadow(0px 10px 20px $secondary-color);
   }
 
   .NavBar:hover {
@@ -67,17 +69,38 @@
   }
 
   .LeftSide {
+    width: 95%;
     flex-direction: row;
     justify-content: space-evenly;
+    padding-left: 0;
+  }
+
+  .RightSide {
+    width: 5%;
+    position: relative;
+
+    .CloseButton {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(-50%, -50%);
+    }
   }
 
   .NavOption {
-    padding-top: 0px;
+    width: 140px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid;
+    border-color: $primary-color;
+    color: $primary-color;
   }
 }
 
 @keyframes slide-left {
   to {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }

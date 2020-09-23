@@ -6,7 +6,9 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 const NavButton = (props) => {
   return (
     <div className="NavButton" onClick={props.onClick}>
-      <FontAwesomeIcon icon={faBars} />
+      <div className="icon">
+        <FontAwesomeIcon icon={faBars} />
+      </div>
     </div>
   );
 };

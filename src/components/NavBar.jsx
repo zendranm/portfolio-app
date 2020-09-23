@@ -10,6 +10,7 @@ const NavBar = (props) => {
         <div className="NavOption">Start</div>
         <div className="NavOption">Projects</div>
         <div className="NavOption">About me</div>
+        <div className="NavOption">Dev Stack</div>
         <div className="NavOption">Contact</div>
       </div>
       <div className="RightSide">
