@@ -22,20 +22,48 @@ const FourthPanel = () => {
       <div className="upperV" />
       <SectionTitle text="DEV STACK" />
       <div className="stackList">
-        <img src={html5} alt="html5" />
-        <img src={css3} alt="css3" />
-        <img src={javascript} alt="javascript" />
-        <img src={typescript} alt="typescript" />
-        <img src={react} alt="react" />
-        <img src={redux} alt="redux" />
-        <img src={router} alt="router" />
-        <img src={webpack} alt="webpack" />
-        <img src={sass} alt="sass" />
-        <img src={bootstrap} alt="bootstrap" />
-        <img src={fontawesome} alt="fontawesome" />
-        <img src={firebase} alt="firebase" />
-        <img src={python} alt="python" />
-        <img src={github} alt="github" />
+        <div className="icon">
+          <img src={html5} alt="html5" />
+        </div>
+        <div className="icon">
+          <img src={css3} alt="css3" />
+        </div>
+        <div className="icon">
+          <img src={javascript} alt="javascript" />
+        </div>
+        <div className="icon">
+          <img src={typescript} alt="typescript" />
+        </div>
+        <div className="icon">
+          <img src={react} alt="react" />
+        </div>
+        <div className="icon">
+          <img src={redux} alt="redux" />
+        </div>
+        <div className="icon">
+          <img src={router} alt="router" />
+        </div>
+        <div className="icon">
+          <img src={webpack} alt="webpack" />
+        </div>
+        <div className="icon">
+          <img src={sass} alt="sass" />
+        </div>
+        <div className="icon">
+          <img src={bootstrap} alt="bootstrap" />
+        </div>
+        <div className="icon">
+          <img src={fontawesome} alt="fontawesome" />
+        </div>
+        <div className="icon">
+          <img src={firebase} alt="firebase" />
+        </div>
+        <div className="icon">
+          <img src={python} alt="python" />
+        </div>
+        <div className="icon">
+          <img src={github} alt="github" />
+        </div>
       </div>
       <div className="bottomV" />
     </div>
