@@ -10,24 +10,24 @@
   margin-bottom: 100px;
   .text {
     text-align: center;
-    font-size: 30px;
-    font-weight: 900;
+    font-size: 50px;
+    font-family: $section-title-font;
     z-index: 0;
   }
 
   .tile1 {
-    height: 50%;
+    height: 40%;
     background-color: $primary-color;
     position: absolute;
-    bottom: 0;
+    bottom: 15%;
     z-index: -1;
   }
 
   .tile2 {
-    height: 50%;
+    height: 40%;
     background-color: $primary-color;
     position: absolute;
-    top: 0;
+    top: 15%;
     z-index: -1;
   }
 }
@@ -61,11 +61,11 @@
 @media (min-width: 400px) {
   .SectionTitle {
     .tile1 {
-      width: 190px;
+      width: 210px;
       left: -90px;
     }
     .tile2 {
-      width: 190px;
+      width: 210px;
       right: -90px;
     }
   }
@@ -75,11 +75,11 @@
   .SectionTitle {
     .tile1 {
       width: 500px;
-      left: -400px;
+      left: -380px;
     }
     .tile2 {
       width: 400px;
-      right: -300px;
+      right: -280px;
     }
   }
 }

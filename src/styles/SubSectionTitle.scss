@@ -4,6 +4,7 @@
   width: fit-content;
   font-size: 30px;
   font-weight: 900;
+  // font-family: $section-title-font;
   margin-bottom: 10px;
   position: relative;
   z-index: 0;
@@ -20,6 +21,15 @@
 @media (min-width: 320px) {
   .SubSectionTitle {
     font-size: 25px;
+    .tile1 {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 370px) {
+  .SubSectionTitle {
+    font-size: 30px;
     .tile1 {
       width: 100%;
     }
