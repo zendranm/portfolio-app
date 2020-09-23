@@ -2,9 +2,6 @@ import React from "react";
 import "styles/SecondPanel.scss";
 import SectionTitle from "components/SectionTitle";
 import ProjectPanel from "components/ProjectPanel";
-// import task_manager from "graphics/task_manager.png";
-// import msc from "graphics/msc.png";
-// import portfolio_app from "graphics/portfolio_app.png";
 import tmp_proj_img from "graphics/tmp_proj_img.png";
 
 const SecondPanel = () => {

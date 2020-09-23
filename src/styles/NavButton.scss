@@ -1,15 +1,11 @@
 @import "variables";
 
 .NavButton {
-  background-color: $primary-color;
   color: $font-color-2;
-  font-size: 20px;
-  padding: 10px;
-  padding-left: 20px;
-  padding-bottom: 15px;
+  font-size: 30px;
+  padding: 20px;
   width: fit-content;
   height: fit-content;
-  border-radius: 0 0 0 100px;
   position: fixed;
   z-index: 9999;
   top: 0;
