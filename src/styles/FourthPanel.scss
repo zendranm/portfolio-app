@@ -2,7 +2,7 @@
 
 .FourthPanel {
   width: 100%;
-  background-color: $primary-color;
+  background: linear-gradient($gradient-color-1, $gradient-color-2);
   color: $secondary-color;
   padding-top: 100px;
   padding-bottom: 200px;

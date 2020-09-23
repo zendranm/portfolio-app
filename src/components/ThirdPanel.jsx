@@ -8,7 +8,7 @@ const ThirdPanel = () => {
   return (
     <div className="ThirdPanel">
       <div className="upperV" />
-      <SectionTitle text="ABOUT ME" />
+      <SectionTitle text="ABOUT ME" areTilesVisible={true} />
       <div className="aboutMe">
         <div className="leftBox">{/* <img src={image} alt="logo" /> */}</div>
         <div className="rightBox">

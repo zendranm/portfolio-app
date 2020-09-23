@@ -20,7 +20,7 @@ const FourthPanel = () => {
   return (
     <div className="FourthPanel">
       <div className="upperV" />
-      <SectionTitle text="DEV STACK" />
+      <SectionTitle text="DEV STACK" areTilesVisible={false} />
       <div className="stackList">
         <div className="icon">
           <img src={html5} alt="html5" />

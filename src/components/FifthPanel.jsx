@@ -9,7 +9,7 @@ import { faEnvelope, faFileDownload } from "@fortawesome/free-solid-svg-icons";
 const FifthPanel = () => {
   return (
     <div className="FifthPanel">
-      <SectionTitle text="CONTACT" />
+      <SectionTitle text="CONTACT" areTilesVisible={true} />
       <EmailPanel />
       <div className="contactOptions">
         <div className="contactIcon">

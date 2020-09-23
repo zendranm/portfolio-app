@@ -1,6 +1,6 @@
 ## To-Do
 
-1. Add gradient to primary color panels.
+1. ~~Add gradient to primary color panels.~~
 2. Change font for sectionTitles (and maybe in general too).
 3. Add loading screen when images load.
 4. Add sliding in sectionTitles animation on scroll
@@ -13,7 +13,7 @@
 11. Fix navbar design and logic.
 12. Finish contact panel.
 13. Change sectionTitles tiles.
-14. Make stack icons more interactive.
+14. ~~Make stack icons more interactive.~~
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

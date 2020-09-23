@@ -4,6 +4,8 @@
   height: 110vh;
   width: 100%;
   position: relative;
+  background: linear-gradient($gradient-color-1, $gradient-color-2);
+  z-index: -1;
 
   .content {
     height: 100%;

@@ -10,7 +10,7 @@ import tmp_proj_img from "graphics/tmp_proj_img.png";
 const SecondPanel = () => {
   return (
     <div className="SecondPanel">
-      <SectionTitle text="PROJECTS" />
+      <SectionTitle text="PROJECTS" areTilesVisible={true} />
       <div className="projectList">
         <ProjectPanel
           image={tmp_proj_img}
