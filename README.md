@@ -10,8 +10,8 @@
 8. ?Add babel?
 9. Add info that machine learning is my hobby.
 10. Prepare images for project panels.
-11. Fix navbar design and logic.
-12. Finish contact panel.
+11. ~~Fix navbar design and logic.~~
+12. Finish contact panel logic.
 13. Change sectionTitles tiles.
 14. ~~Make stack icons more interactive.~~
 

@@ -22,6 +22,7 @@
 .RightSide {
   .CloseButton:hover {
     cursor: pointer;
+    filter: brightness(75%);
   }
 }
 
@@ -96,6 +97,11 @@
     border: 2px solid;
     border-color: $primary-color;
     color: $primary-color;
+  }
+
+  .NavOption:hover {
+    cursor: pointer;
+    filter: brightness(75%);
   }
 }
 
