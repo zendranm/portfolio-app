@@ -4,9 +4,9 @@ import SectionTitle from "components/SectionTitle";
 import SubSectionTitle from "components/SubSectionTitle";
 import image from "graphics/image_cropped.jpg";
 
-const ThirdPanel = () => {
+const ThirdPanel = (props) => {
   return (
-    <div className="ThirdPanel">
+    <div className="ThirdPanel" ref={props.customRef}>
       <div className="upperV" />
       <SectionTitle text="ABOUT ME" areTilesVisible={true} />
       <div className="aboutMe">

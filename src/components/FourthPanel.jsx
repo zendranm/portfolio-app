@@ -16,9 +16,9 @@ import firebase from "icons/firebase-1.svg";
 import github from "icons/github-icon-1.svg";
 import python from "icons/python-5.svg";
 
-const FourthPanel = () => {
+const FourthPanel = (props) => {
   return (
-    <div className="FourthPanel">
+    <div className="FourthPanel" ref={props.customRef}>
       <div className="upperV" />
       <SectionTitle text="DEV STACK" areTilesVisible={false} />
       <div className="stackList">

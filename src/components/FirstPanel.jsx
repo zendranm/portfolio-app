@@ -3,9 +3,9 @@ import "styles/FirstPanel.scss";
 import HelloText from "components/HelloText";
 import logo from "graphics/snowboard2.png";
 
-const FirstPanel = () => {
+const FirstPanel = (props) => {
   return (
-    <div className="FirstPanel">
+    <div className="FirstPanel" ref={props.customRef}>
       <div className="content">
         <div />
         <div className="leftBox">

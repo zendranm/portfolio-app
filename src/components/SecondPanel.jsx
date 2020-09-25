@@ -4,9 +4,9 @@ import SectionTitle from "components/SectionTitle";
 import ProjectPanel from "components/ProjectPanel";
 import tmp_proj_img from "graphics/tmp_proj_img.png";
 
-const SecondPanel = () => {
+const SecondPanel = (props) => {
   return (
-    <div className="SecondPanel">
+    <div className="SecondPanel" ref={props.customRef}>
       <SectionTitle text="PROJECTS" areTilesVisible={true} />
       <div className="projectList">
         <ProjectPanel
