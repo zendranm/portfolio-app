@@ -4,7 +4,7 @@ import SectionTitle from "components/SectionTitle";
 import EmailPanel from "components/EmailPanel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faFileDownload } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const FifthPanel = (props) => {
   return (

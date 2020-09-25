@@ -1,7 +1,7 @@
 import React from "react";
 import "styles/FirstPanel.scss";
 import HelloText from "components/HelloText";
-import logo from "graphics/snowboard2.png";
+import myImage from "graphics/snowboard2.png";
 
 const FirstPanel = (props) => {
   return (
@@ -18,7 +18,7 @@ const FirstPanel = (props) => {
           </div>
         </div>
         <div className="rightBox">
-          <img src={logo} alt="" />
+          <img src={myImage} alt="" />
         </div>
       </div>
       <div className="bottomV" />

@@ -2,7 +2,7 @@ import React from "react";
 import "styles/ThirdPanel.scss";
 import SectionTitle from "components/SectionTitle";
 import SubSectionTitle from "components/SubSectionTitle";
-import image from "graphics/image_cropped.jpg";
+import ImageComposition from "components/ImageComposition";
 
 const ThirdPanel = (props) => {
   return (
@@ -10,7 +10,9 @@ const ThirdPanel = (props) => {
       <div className="upperV" />
       <SectionTitle text="ABOUT ME" areTilesVisible={true} />
       <div className="aboutMe">
-        <div className="leftBox">{/* <img src={image} alt="logo" /> */}</div>
+        <div className="leftBox">
+          <ImageComposition />
+        </div>
         <div className="rightBox">
           <div className="mainDescription">
             Hi! I'm Michał, React Developer. Fresh out of college, but

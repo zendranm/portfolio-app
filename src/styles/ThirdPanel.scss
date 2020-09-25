@@ -24,9 +24,6 @@
   justify-content: space-evenly;
   align-items: flex-start;
 
-  .leftBox {
-    border: solid black;
-  }
   .rightBox {
     .mainDescription {
       margin-bottom: 20px;
@@ -61,7 +58,7 @@
     padding-left: 100px;
     .leftBox {
       width: 400px;
-      height: 400px;
+      height: 500px;
     }
     .rightBox {
       width: calc(100% - 600px);
