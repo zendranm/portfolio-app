@@ -35,7 +35,7 @@
     filter: drop-shadow(9px -10px 19px rgba(0, 0, 0, 0.5));
 
     path {
-      fill: $primary-color;
+      fill: $gradient-color-1;
     }
   }
 
@@ -48,7 +48,7 @@
     filter: drop-shadow(9px -10px 19px rgba(0, 0, 0, 0.5));
 
     path {
-      fill: #99ff33;
+      fill: $gradient-color-2;
     }
   }
 }

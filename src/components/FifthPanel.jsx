@@ -13,13 +13,29 @@ const FifthPanel = (props) => {
       <EmailPanel />
       <div className="contactOptions">
         <div className="contactIcon">
-          <FontAwesomeIcon icon={faLinkedin} />
+          <a
+            href="https://www.linkedin.com/in/micha%C5%82-zendran/"
+            target="_blank"
+            without
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
         </div>
         <div className="contactIcon">
-          <FontAwesomeIcon icon={faGithub} />
+          <a
+            href="https://github.com/zendranm"
+            target="_blank"
+            without
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
         </div>
         <div className="contactIcon">
-          <FontAwesomeIcon icon={faEnvelope} />
+          <a href="mailto:zendran.@gmail.com">
+            <FontAwesomeIcon icon={faEnvelope} />
+          </a>
         </div>
       </div>
     </div>

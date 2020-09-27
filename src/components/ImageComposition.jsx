@@ -1,6 +1,6 @@
 import React from "react";
 import "styles/ImageComposition.scss";
-import myImage from "graphics/snowboard3.png";
+import myImage from "graphics/firts_choice_cutted.png";
 
 const ImageComposition = () => {
   return (

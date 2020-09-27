@@ -5,7 +5,7 @@
 3. Add loading screen when images load.
 4. Add sliding in sectionTitles animation on scroll
 5. Prepare svg version of main photo.
-6. Prepare image for about me section.
+6. ~~Prepare image for about me section.~~
 7. ?Add webpack?
 8. ?Add babel?
 9. Add info that machine learning is my hobby.
