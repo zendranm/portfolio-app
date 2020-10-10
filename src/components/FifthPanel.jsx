@@ -16,7 +16,6 @@ const FifthPanel = (props) => {
           <a
             href="https://www.linkedin.com/in/micha%C5%82-zendran/"
             target="_blank"
-            without
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faLinkedin} />
@@ -26,7 +25,6 @@ const FifthPanel = (props) => {
           <a
             href="https://github.com/zendranm"
             target="_blank"
-            without
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faGithub} />
