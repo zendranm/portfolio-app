@@ -15,27 +15,44 @@ const ThirdPanel = (props) => {
         </div>
         <div className="rightBox">
           <div className="mainDescription">
-            Hi! I'm Michał, React Developer. Fresh out of college, but
-            experienced, I am looking for an opportunity to further develop my
-            skills in React and Frontend in general. I had the opportunity to
-            take part in a student internship at well-known international
-            company as a front-end developer. During this time I managed to
-            implement and deploy crucial application in React.
+            Hi! I'm Michał,{" "}
+            <u>
+              <b>React Developer</b>
+            </u>
+            . Fresh out of college, but experienced, I am looking for an
+            opportunity to further develop my skills in React and Frontend in
+            general. I had the opportunity to take part in a student internship{" "}
+            <u>
+              <b>at well-known international company</b>
+            </u>{" "}
+            as a front-end developer. During this time I managed to implement
+            and deploy{" "}
+            <u>
+              <b>crucial application in React.</b>
+            </u>
           </div>
           <div className="subDescription">
             <SubSectionTitle text="Front-end Developer" />
             <div>
               I like to code things from scratch and love to see an idea
-              becoming a live thing. Clean code and elegant design is my ninja
-              way.
+              becoming a live thing. Clean code and elegant design is{" "}
+              <u>
+                <b>my ninja way.</b>
+              </u>
             </div>
           </div>
           <div className="subDescription">
             <SubSectionTitle text="Background" />
             <div>
-              I obtained my engineer degree in Control Engineering and Robotics
+              I obtained my engineer degree in{" "}
+              <u>
+                <b>Control Engineering and Robotics</b>
+              </u>{" "}
               but discovered that programming brings me tons of satisfaction and
-              obtained my master degree in Computer Science.
+              obtained my{" "}
+              <u>
+                <b>master degree in Computer Science.</b>
+              </u>
             </div>
           </div>
           <div className="subDescription">
