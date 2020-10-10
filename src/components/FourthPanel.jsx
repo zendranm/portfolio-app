@@ -1,7 +1,7 @@
 import React from "react";
 import "styles/FourthPanel.scss";
 import SectionTitle from "components/SectionTitle";
-import html5 from "icons/html5.svg";
+import html5 from "icons/html-5.svg";
 import css3 from "icons/css-3.svg";
 import javascript from "icons/javascript.svg";
 import typescript from "icons/typescript.svg";
