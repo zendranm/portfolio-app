@@ -34,6 +34,7 @@
 
     input {
       font-size: 20px;
+      -webkit-text-fill-color: $font-color-3;
       font-family: $primary-font;
       width: calc(100% - 20px);
       padding: 5px;
