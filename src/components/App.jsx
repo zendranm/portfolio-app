@@ -15,8 +15,36 @@ const App = () => {
     updateIsNavBarVisible(true);
   };
 
-  const handleNavBarOnClick = () => {
+  const handleNavBarCloseOnClick = () => {
     updateIsNavBarVisible(false);
+  };
+
+  const isMobile = () => {
+    const toMatch = [
+      /Android/i,
+      /webOS/i,
+      /iPhone/i,
+      /iPad/i,
+      /iPod/i,
+      /BlackBerry/i,
+      /Windows Phone/i,
+    ];
+
+    return toMatch.some((toMatchItem) => {
+      return navigator.userAgent.match(toMatchItem);
+    });
+  };
+
+  const handleOptionClick = () => {
+    let isMobileDevice = false;
+
+    if (isMobile()) {
+      isMobileDevice = true;
+    }
+
+    if (isMobileDevice === true) {
+      updateIsNavBarVisible(false);
+    }
   };
 
   const FirstPanelRef = useRef(null);
@@ -38,7 +66,11 @@ const App = () => {
     navOption = <NavButton onClick={handleNavButtonOnClick} />;
   } else {
     navOption = (
-      <NavBar onClick={handleNavBarOnClick} references={listOfRefs} />
+      <NavBar
+        onCloseClick={handleNavBarCloseOnClick}
+        onOptionClick={handleOptionClick}
+        references={listOfRefs}
+      />
     );
   }
   return (
