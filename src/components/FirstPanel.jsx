@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "styles/FirstPanel.scss";
 import HelloText from "components/HelloText";
 import myImage from "graphics/snowboard2.png";
 
 const FirstPanel = (props) => {
+  const [animationState, updateAnimationState] = useState(document.hidden ? "paused" : "running");
+
+  document.onvisibilitychange = function () {
+    if (document.visibilityState === "visible") {
+      updateAnimationState("running");
+    } else {
+      updateAnimationState("paused");
+    }
+  };
+
   return (
     <div className="FirstPanel" ref={props.customRef}>
       <div className="content">
         <div />
         <div className="leftBox">
-          <div className="mainText">
+          <div className="mainText" style={{ animationPlayState: animationState }}>
             <HelloText />
             <div className="NamePart">I'M MICHAŁ</div>
             <div className="NamePart-shadow">I'M MICHAŁ</div>

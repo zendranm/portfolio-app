@@ -5,6 +5,7 @@ body {
   color: $font-color-1;
   font-family: $primary-font;
   margin: 0px;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* unvisited link */
