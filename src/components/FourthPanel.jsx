@@ -1,22 +1,22 @@
-import React from "react";
-import "styles/FourthPanel.scss";
-import SectionTitle from "components/SectionTitle";
-import html5 from "icons/html-5.svg";
-import css3 from "icons/css-3.svg";
-import javascript from "icons/javascript.svg";
-import typescript from "icons/typescript.svg";
-import react from "icons/react-1.svg";
-import redux from "icons/redux.svg";
-import router from "icons/react-router.svg";
-import webpack from "icons/webpack-icon.svg";
-import sass from "icons/sass-1.svg";
-import bootstrap from "icons/bootstrap-4.svg";
-import fontawesome from "icons/fontawesome-1.svg";
-import firebase from "icons/firebase-1.svg";
-import github from "icons/github-icon-1.svg";
-import python from "icons/python-5.svg";
+import React from "react"
+import "../styles/FourthPanel.scss"
+import SectionTitle from "../components/SectionTitle"
+import html5 from "../icons/html-5.svg"
+import css3 from "../icons/css-3.svg"
+import javascript from "../icons/javascript.svg"
+import typescript from "../icons/typescript.svg"
+import react from "../icons/react-1.svg"
+import redux from "../icons/redux.svg"
+import router from "../icons/react-router.svg"
+import webpack from "../icons/webpack-icon.svg"
+import sass from "../icons/sass-1.svg"
+import bootstrap from "../icons/bootstrap-4.svg"
+import gatsby from "../icons/gatsby.svg"
+import firebase from "../icons/firebase-1.svg"
+import github from "../icons/github-icon-1.svg"
+import python from "../icons/python-5.svg"
 
-const FourthPanel = (props) => {
+const FourthPanel = props => {
   return (
     <div className="FourthPanel" ref={props.customRef}>
       <div className="upperV" />
@@ -47,12 +47,16 @@ const FourthPanel = (props) => {
           <div className="iconName">REDUX</div>
         </div>
         <div className="icon">
-          <img src={router} alt="router" />
-          <div className="iconName">ROUTER</div>
+          <img src={gatsby} alt="gatsby" />
+          <div className="iconName">GATSBY</div>
         </div>
         <div className="icon">
           <img src={webpack} alt="webpack" />
           <div className="iconName">WEBPACK</div>
+        </div>
+        <div className="icon">
+          <img src={router} alt="router" />
+          <div className="iconName">ROUTER</div>
         </div>
         <div className="icon">
           <img src={sass} alt="sass" />
@@ -61,10 +65,6 @@ const FourthPanel = (props) => {
         <div className="icon">
           <img src={bootstrap} alt="bootstrap" />
           <div className="iconName">BOOTSTRAP</div>
-        </div>
-        <div className="icon">
-          <img src={fontawesome} alt="fontawesome" />
-          <div className="iconName">FONTAWESOME</div>
         </div>
         <div className="icon">
           <img src={firebase} alt="firebase" />
@@ -81,7 +81,7 @@ const FourthPanel = (props) => {
       </div>
       <div className="bottomV" />
     </div>
-  );
-};
+  )
+}
 
-export default FourthPanel;
+export default FourthPanel

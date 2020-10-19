@@ -1,25 +1,30 @@
-import React, { useState } from "react";
-import "styles/FirstPanel.scss";
-import HelloText from "components/HelloText";
-import myImage from "graphics/snowboard2.png";
+import React, { useState } from "react"
+import "../styles/FirstPanel.scss"
+import HelloText from "../components/HelloText"
+import myImage from "../graphics/snowboard3.png"
 
-const FirstPanel = (props) => {
-  const [animationState, updateAnimationState] = useState(document.hidden ? "paused" : "running");
+const FirstPanel = props => {
+  const [animationState, updateAnimationState] = useState(
+    document.hidden ? "paused" : "running"
+  )
 
   document.onvisibilitychange = function () {
     if (document.visibilityState === "visible") {
-      updateAnimationState("running");
+      updateAnimationState("running")
     } else {
-      updateAnimationState("paused");
+      updateAnimationState("paused")
     }
-  };
+  }
 
   return (
     <div className="FirstPanel" ref={props.customRef}>
       <div className="content">
         <div />
         <div className="leftBox">
-          <div className="mainText" style={{ animationPlayState: animationState }}>
+          <div
+            className="mainText"
+            style={{ animationPlayState: animationState }}
+          >
             <HelloText />
             <div className="NamePart">I'M MICHAŁ</div>
             <div className="NamePart-shadow">I'M MICHAŁ</div>
@@ -33,7 +38,7 @@ const FirstPanel = (props) => {
       </div>
       <div className="bottomV" />
     </div>
-  );
-};
+  )
+}
 
-export default FirstPanel;
+export default FirstPanel

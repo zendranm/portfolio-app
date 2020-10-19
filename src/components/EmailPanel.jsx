@@ -1,5 +1,5 @@
-import React from "react";
-import "styles/EmailPanel.scss";
+import React from "react"
+import "../styles/EmailPanel.scss"
 
 const EmailPanel = () => {
   return (
@@ -16,7 +16,7 @@ const EmailPanel = () => {
         </form>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default EmailPanel;
+export default EmailPanel

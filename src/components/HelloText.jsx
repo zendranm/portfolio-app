@@ -1,5 +1,5 @@
 import React from "react";
-import "styles/HelloText.scss";
+import "../styles/HelloText.scss";
 
 const HelloText = () => {
   return (

@@ -1,11 +1,11 @@
 import React from "react";
-import "styles/SecondPanel.scss";
-import SectionTitle from "components/SectionTitle";
-import ProjectPanel from "components/ProjectPanel";
-import task_manager_project from "graphics/task_manager_project.PNG";
-import portfolio_project from "graphics/portfolio_project.PNG";
-import deepfake_project from "graphics/deepfake_project.PNG";
-import construction_project from "graphics/construction_project.PNG";
+import "../styles/SecondPanel.scss";
+import SectionTitle from "../components/SectionTitle";
+import ProjectPanel from "../components/ProjectPanel";
+import task_manager_project from "../graphics/task_manager_project.png";
+import portfolio_project from "../graphics/portfolio_project.png";
+import deepfake_project from "../graphics/deepfake_project.png";
+import construction_project from "../graphics/construction_project.png";
 
 const SecondPanel = (props) => {
   return (

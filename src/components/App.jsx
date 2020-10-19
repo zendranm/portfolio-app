@@ -1,12 +1,12 @@
 import React, { useState, useRef } from "react";
-import "styles/App.scss";
-import NavBar from "components/NavBar";
-import NavButton from "components/NavButton";
-import FirstPanel from "components/FirstPanel";
-import SecondPanel from "components/SecondPanel";
-import ThirdPanel from "components/ThirdPanel";
-import FourthPanel from "components/FourthPanel";
-import FifthPanel from "components/FifthPanel";
+import "../styles/App.scss";
+import NavBar from "../components/NavBar";
+import NavButton from "../components/NavButton";
+import FirstPanel from "../components/FirstPanel";
+import SecondPanel from "../components/SecondPanel";
+import ThirdPanel from "../components/ThirdPanel";
+import FourthPanel from "../components/FourthPanel";
+import FifthPanel from "../components/FifthPanel";
 
 const App = () => {
   const [isNavBarVisible, updateIsNavBarVisible] = useState(false);

@@ -1,5 +1,5 @@
 import React from "react";
-import "styles/ProjectPanel.scss";
+import "../styles/ProjectPanel.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPlayCircle } from "@fortawesome/free-solid-svg-icons";
