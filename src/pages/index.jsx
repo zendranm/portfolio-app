@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react"
+import Helmet from "react-helmet"
 import "../styles/App.scss"
 import NavBar from "../components/NavBar"
 import NavButton from "../components/NavButton"
@@ -76,6 +77,9 @@ const Index = () => {
   }
   return (
     <div className="App">
+      <Helmet>
+        <title>Michał Zendran</title>
+      </Helmet>
       {navOption}
       <div className="MainPanel">
         <FirstPanel customRef={listOfRefs[0]} />

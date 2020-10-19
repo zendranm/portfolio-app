@@ -8,6 +8,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+* {
+  outline: none;
+}
+
 /* unvisited link */
 a:link {
   color: inherit;
