@@ -1,20 +1,22 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import "../styles/FirstPanel.scss"
 import HelloText from "../components/HelloText"
 import myImage from "../graphics/snowboard3.png"
 
 const FirstPanel = props => {
-  const [animationState, updateAnimationState] = useState(
-    document.hidden ? "paused" : "running"
-  )
+  const [animationState, updateAnimationState] = useState("paused")
 
-  document.onvisibilitychange = function () {
-    if (document.visibilityState === "visible") {
-      updateAnimationState("running")
-    } else {
-      updateAnimationState("paused")
+  useEffect(() => {
+    updateAnimationState(document.hidden ? "paused" : "running")
+
+    document.onvisibilitychange = function () {
+      if (document.visibilityState === "visible") {
+        updateAnimationState("running")
+      } else {
+        updateAnimationState("paused")
+      }
     }
-  }
+  }, [])
 
   return (
     <div className="FirstPanel" ref={props.customRef}>
