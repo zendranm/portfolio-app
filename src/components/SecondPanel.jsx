@@ -1,13 +1,13 @@
-import React from "react";
-import "../styles/SecondPanel.scss";
-import SectionTitle from "../components/SectionTitle";
-import ProjectPanel from "../components/ProjectPanel";
-import task_manager_project from "../graphics/task_manager_project.png";
-import portfolio_project from "../graphics/portfolio_project.png";
-import deepfake_project from "../graphics/deepfake_project.png";
-import construction_project from "../graphics/construction_project.png";
+import React from "react"
+import "../styles/SecondPanel.scss"
+import SectionTitle from "../components/SectionTitle"
+import ProjectPanel from "../components/ProjectPanel"
+import task_manager_project from "../graphics/task_manager_project_image.png"
+import portfolio_project from "../graphics/portfolio_project_image.png"
+import deepfake_project from "../graphics/deepfake_project_image.png"
+import construction_project from "../graphics/construction_project_image.png"
 
-const SecondPanel = (props) => {
+const SecondPanel = props => {
   return (
     <div className="SecondPanel" ref={props.customRef}>
       <SectionTitle text="PROJECTS" areTilesVisible={true} />
@@ -42,7 +42,7 @@ const SecondPanel = (props) => {
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SecondPanel;
+export default SecondPanel
