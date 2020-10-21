@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import "../styles/FirstPanel.scss"
 import HelloText from "../components/HelloText"
-import myImage from "../graphics/snowboard3.png"
+import myImage from "../graphics/snowboard_tinypng.png"
 
 const FirstPanel = props => {
   const [animationState, updateAnimationState] = useState("paused")

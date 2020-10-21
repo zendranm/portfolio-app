@@ -29,6 +29,7 @@
       z-index: -1;
       img {
         height: 100%;
+        max-height: 2000px;
         float: right;
         z-index: -9;
         filter: grayscale(1) drop-shadow(29px -10px 19px rgba(0, 0, 0, 0.5));

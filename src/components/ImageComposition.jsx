@@ -1,6 +1,6 @@
-import React from "react";
-import "../styles/ImageComposition.scss";
-import myImage from "../graphics/firts_choice_cutted.png";
+import React from "react"
+import "../styles/ImageComposition.scss"
+import myImage from "../graphics/about_me_image_tinypng.png"
 
 const ImageComposition = () => {
   return (
@@ -25,7 +25,7 @@ const ImageComposition = () => {
         <img src={myImage} alt="" />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ImageComposition;
+export default ImageComposition
