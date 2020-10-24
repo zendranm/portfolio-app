@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: flex-start;
 
   .rightBox {
@@ -31,8 +31,9 @@
       margin-bottom: 20px;
     }
     .subDescription {
+      max-width: 800px;
+      margin: 0 auto;
       margin-bottom: 20px;
-      max-width: 700px;
     }
   }
 }
@@ -53,7 +54,7 @@
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 1000px) {
   .aboutMe {
     width: calc(100% - 200px);
     padding-right: 100px;
@@ -61,10 +62,15 @@
     .leftBox {
       width: 400px;
       height: 500px;
+      margin-right: 50px;
     }
     .rightBox {
       width: calc(100% - 600px);
+      max-width: 800px;
       font-size: 20px;
+      .subDescription {
+        float: right;
+      }
     }
   }
 }

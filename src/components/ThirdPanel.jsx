@@ -14,7 +14,7 @@ const ThirdPanel = props => {
           <ImageComposition />
         </div>
         <div className="rightBox">
-          <div className="mainDescription">
+          {/* <div className="mainDescription">
             I'm Michał, React Developer. Fresh out of college, but experienced,
             I am looking for an opportunity to further develop my skills in
             React and Frontend in general. I had the opportunity to take part in
@@ -23,29 +23,31 @@ const ThirdPanel = props => {
             deploy a crucial application in React. At my current position I work
             with JS everyday, implementing, debugging and consulting clients’
             custom solutions.
-          </div>
+          </div> */}
           <div className="subDescription">
-            <SubSectionTitle text="Front-end Developer" />
+            <SubSectionTitle text="Experience" />
             <div>
-              I like to code things from scratch and love to see an idea
-              becoming a live thing. Clean code and elegant design is my ninja
-              way.
+              At my current position I work with JS and various web technologies
+              everyday, implementing, debugging and consulting clients’ custom
+              solutions. During a student internship at a well-known
+              international company I managed to implement and deploy a crucial
+              application in React.
             </div>
           </div>
           <div className="subDescription">
             <SubSectionTitle text="Background" />
             <div>
-              I obtained my engineer degree in Control Engineering and Robotics
-              but discovered that programming brings me tons of satisfaction and
-              so obtained my master degree in Computer Science.
+              I obtained my engineer’s degree in Control Engineering and
+              Robotics but discovered that programming brings me tons of
+              satisfaction and so obtained my master degree in Computer Science.
             </div>
           </div>
           <div className="subDescription">
             <SubSectionTitle text="Hobbies" />
             <div>
-              I spend most of my spare time at shredding on my guitars (almost
-              for 10 years now) and on many different sports (not pro at any of
-              them but fun is fun).
+              I spend most of my spare time shredding on my guitars (almost for
+              10 years now) and on many different sports (not pro at any of them
+              but fun is fun).
             </div>
           </div>
         </div>
