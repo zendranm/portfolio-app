@@ -45,8 +45,11 @@ const ThirdPanel = props => {
           <div className="subDescription">
             <SubSectionTitle text="Hobbies" />
             <div>
-              I spend most of my spare time shredding on my guitars (almost for
-              10 years now) and on many different sports (not pro at any of them
+              Besides front-end, machine learning is my main area of interest. I
+              dedicated both my engineering and master’s theses to explore the
+              potential of artificial neural networks. Except for programming, I
+              spend most of my spare time shredding on my guitars (almost for 10
+              years now) and on many different sports (not pro at any of them
               but fun is fun).
             </div>
           </div>
