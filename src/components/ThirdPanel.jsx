@@ -14,16 +14,6 @@ const ThirdPanel = props => {
           <ImageComposition />
         </div>
         <div className="rightBox">
-          {/* <div className="mainDescription">
-            I'm Michał, React Developer. Fresh out of college, but experienced,
-            I am looking for an opportunity to further develop my skills in
-            React and Frontend in general. I had the opportunity to take part in
-            a student internship at a well-known international company as a
-            front-end developer. During this time I managed to implement and
-            deploy a crucial application in React. At my current position I work
-            with JS everyday, implementing, debugging and consulting clients’
-            custom solutions.
-          </div> */}
           <div className="subDescription">
             <SubSectionTitle text="Experience" />
             <div>

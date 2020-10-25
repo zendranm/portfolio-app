@@ -8,6 +8,7 @@ import SecondPanel from "../components/SecondPanel"
 import ThirdPanel from "../components/ThirdPanel"
 import FourthPanel from "../components/FourthPanel"
 import FifthPanel from "../components/FifthPanel"
+import favicon from "../graphics/favicon.svg"
 import "../styles/index.scss"
 
 const Index = () => {
@@ -79,6 +80,7 @@ const Index = () => {
     <div className="App">
       <Helmet>
         <title>Michał Zendran</title>
+        <link rel="icon" type="image/svg+xml" href={favicon} />
       </Helmet>
       {navOption}
       <div className="MainPanel">
