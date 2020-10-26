@@ -5,7 +5,7 @@ const EmailPanel = () => {
   return (
     <div className="EmailPanel">
       <div className="inputFields">
-        <form>
+        <form action="POST" data-netlify="true">
           <input type="text" id="name" name="name" placeholder="Name" />
           <br />
           <input type="email" id="email" name="email" placeholder="Email" />
