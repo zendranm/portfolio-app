@@ -20,6 +20,7 @@
     "@fortawesome/react-fontawesome": "0.1.11",
     "@hot-loader/react-dom": "npm:@hot-loader/react-dom",
     "@sanity/cli": "2.29.3",
+    "@sanity/client": "^3.3.0",
     "gatsby": "4.11.2",
     "gatsby-plugin-react-helmet": "5.11.0",
     "gatsby-plugin-sass": "5.11.1",

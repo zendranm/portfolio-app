@@ -1,10 +1,22 @@
-import React from "react"
+import React, { useEffect } from "react"
 import "../styles/ThirdPanel.scss"
 import SectionTitle from "../components/SectionTitle"
 import SubSectionTitle from "../components/SubSectionTitle"
 import ImageComposition from "../components/ImageComposition"
+import sanityClient from "../client.js"
 
 const ThirdPanel = props => {
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "person"]{
+        name,
+    }`
+      )
+      .then(data => console.log(data))
+      .catch(console.error)
+  }, [])
+
   return (
     <div className="ThirdPanel" ref={props.customRef}>
       <div className="upperV" />
