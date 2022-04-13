@@ -13,5 +13,10 @@ export default {
       name: "icon",
       type: "image",
     },
+    {
+      title: "order",
+      name: "order",
+      type: "number",
+    },
   ],
 }

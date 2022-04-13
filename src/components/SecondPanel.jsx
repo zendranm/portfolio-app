@@ -6,22 +6,22 @@ import { useSanityQuery } from "../hooks/useSanityQuery"
 
 const SecondPanel = props => {
   const query = `*[_type == "projects"]{project_name, project_description, githubUrl, demoUrl, "thumbnail": thumbnail.asset->url, order}`
-  const sections = useSanityQuery(query)
+  const projects = useSanityQuery(query)
 
   return (
     <div className="SecondPanel" ref={props.customRef}>
       <SectionTitle text="PROJECTS" areTilesVisible={true} />
       <div className="projectList">
-        {sections
+        {projects
           .sort((prev, next) => prev.order - next.order)
-          .map(section => (
+          .map(project => (
             <ProjectPanel
-              key={section.order}
-              image={section.thumbnail}
-              title={section.project_name}
-              text={section.project_description}
-              linkLive={section.demoUrl}
-              linkGithub={section.githubUrl}
+              key={project.order}
+              image={project.thumbnail}
+              title={project.project_name}
+              text={project.project_description}
+              linkLive={project.demoUrl}
+              linkGithub={project.githubUrl}
             />
           ))}
       </div>
