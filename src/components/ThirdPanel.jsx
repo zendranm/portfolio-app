@@ -14,6 +14,7 @@ const ThirdPanel = props => {
         `*[_type == "about_me"]{
           section_name,
           section_content,
+          order
     }`
       )
       .then(data => setSections(data))
@@ -29,12 +30,14 @@ const ThirdPanel = props => {
           <ImageComposition />
         </div>
         <div className="rightBox">
-          {sections.map((section, index) => (
-            <div className="subDescription" key={index}>
-              <SubSectionTitle text={section.section_name} />
-              <div>{section.section_content}</div>
-            </div>
-          ))}
+          {sections
+            .sort((prev, next) => prev.order - next.order)
+            .map((section, index) => (
+              <div className="subDescription" key={index}>
+                <SubSectionTitle text={section.section_name} />
+                <div>{section.section_content}</div>
+              </div>
+            ))}
         </div>
       </div>
     </div>
