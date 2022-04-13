@@ -2,7 +2,7 @@
   My Portfolio
 </h1>
 
-This project aims to present my front-end developer skills and back it up with various projects I created over the last few years. The main goal was to create an eye-catching website with modern design and great UX, which links to more complex (developing-wise) projects.
+This project aims to present my front-end developer skills and back it up with various projects I created over the last few years. The main goal was to create an eye-catching website with modern UI and great UX, which links to more complex (developing-wise) projects.
 
 Check the live version [here](https://zendranm.netlify.app/)
 
