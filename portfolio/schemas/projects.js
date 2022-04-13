@@ -28,5 +28,10 @@ export default {
       name: "thumbnail",
       type: "image",
     },
+    {
+      title: "order",
+      name: "order",
+      type: "number",
+    },
   ],
 }

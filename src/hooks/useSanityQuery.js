@@ -9,7 +9,7 @@ export const useSanityQuery = query => {
       .fetch(query)
       .then(data => setSections(data))
       .catch(console.error)
-  }, [])
+  }, [query])
 
   return sections
 }

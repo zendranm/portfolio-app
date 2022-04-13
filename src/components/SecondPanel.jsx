@@ -2,44 +2,28 @@ import React from "react"
 import "../styles/SecondPanel.scss"
 import SectionTitle from "../components/SectionTitle"
 import ProjectPanel from "../components/ProjectPanel"
-import task_manager_project from "../graphics/task_manager_project_image.png"
-import portfolio_project from "../graphics/portfolio_project_image.png"
-import deepfake_project from "../graphics/deepfake_project_image.png"
-import construction_project from "../graphics/construction_project_image.png"
+import { useSanityQuery } from "../hooks/useSanityQuery"
 
 const SecondPanel = props => {
+  const query = `*[_type == "projects"]{project_name, project_description, githubUrl, demoUrl, "thumbnail": thumbnail.asset->url, order}`
+  const sections = useSanityQuery(query)
+
   return (
     <div className="SecondPanel" ref={props.customRef}>
       <SectionTitle text="PROJECTS" areTilesVisible={true} />
       <div className="projectList">
-        <ProjectPanel
-          image={task_manager_project}
-          title="Task Manager"
-          text="Organize all Your tasks in a convenient way"
-          linkLive="https://demo-task-manager.netlify.app/#/"
-          linkGithub="https://github.com/zendranm/task-manager"
-        />
-        <ProjectPanel
-          image={deepfake_project}
-          title="Deepfake Research"
-          text="Comparison of Deepfake methods"
-          linkLive=""
-          linkGithub="https://github.com/zendranm/MSC"
-        />
-        <ProjectPanel
-          image={portfolio_project}
-          title="My Portfolio"
-          text="Exactly the same You're checking out right now"
-          linkLive=""
-          linkGithub="https://github.com/zendranm/portfolio-app"
-        />
-        <ProjectPanel
-          image={construction_project}
-          title="New project"
-          text="Coming soon!"
-          linkLive=""
-          linkGithub=""
-        />
+        {sections
+          .sort((prev, next) => prev.order - next.order)
+          .map(section => (
+            <ProjectPanel
+              key={section.order}
+              image={section.thumbnail}
+              title={section.project_name}
+              text={section.project_description}
+              linkLive={section.demoUrl}
+              linkGithub={section.githubUrl}
+            />
+          ))}
       </div>
     </div>
   )

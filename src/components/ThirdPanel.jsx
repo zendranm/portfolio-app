@@ -20,8 +20,8 @@ const ThirdPanel = props => {
         <div className="rightBox">
           {sections
             .sort((prev, next) => prev.order - next.order)
-            .map((section, index) => (
-              <div className="subDescription" key={index}>
+            .map(section => (
+              <div className="subDescription" key={section.order}>
                 <SubSectionTitle text={section.section_name} />
                 <div>{section.section_content}</div>
               </div>
