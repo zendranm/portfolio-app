@@ -1,25 +1,13 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import "../styles/ThirdPanel.scss"
 import SectionTitle from "../components/SectionTitle"
 import SubSectionTitle from "../components/SubSectionTitle"
 import ImageComposition from "../components/ImageComposition"
-import sanityClient from "../client.js"
+import { useSanityQuery } from "../hooks/useSanityQuery"
 
 const ThirdPanel = props => {
-  const [sections, setSections] = useState([])
-
-  useEffect(() => {
-    sanityClient
-      .fetch(
-        `*[_type == "about_me"]{
-          section_name,
-          section_content,
-          order
-    }`
-      )
-      .then(data => setSections(data))
-      .catch(console.error)
-  }, [])
+  const query = `*[_type == "about_me"]{section_name, section_content, order}`
+  const sections = useSanityQuery(query)
 
   return (
     <div className="ThirdPanel" ref={props.customRef}>

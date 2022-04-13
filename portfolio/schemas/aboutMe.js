@@ -13,5 +13,10 @@ export default {
       name: "section_content",
       type: "text",
     },
+    {
+      title: "order",
+      name: "order",
+      type: "number",
+    },
   ],
 }
