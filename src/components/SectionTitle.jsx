@@ -5,13 +5,11 @@ export const SectionTitle = props => {
   return (
     <MainContainer>
       <Text>{props.text}</Text>
-      {props.areTilesVisible ? (
-        <div>
+      {props.areTilesVisible && (
+        <>
           <Tile />
           <Tile upper />
-        </div>
-      ) : (
-        <div />
+        </>
       )}
     </MainContainer>
   )
