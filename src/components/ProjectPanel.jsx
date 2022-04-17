@@ -5,40 +5,35 @@ import { faPlayCircle } from '@fortawesome/free-solid-svg-icons'
 import styled from 'styled-components'
 
 export const ProjectPanel = props => {
-  let setLinkButtons = () => {
-    let linkButtons = []
-
-    if (props.linkGithub) {
-      linkButtons.push(
-        <IconButton key={props.title + 'linkGithub'}>
-          <a href={props.linkGithub} target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-        </IconButton>
-      )
-    }
-
-    if (props.linkLive) {
-      linkButtons.push(
-        <IconButton key={props.title + 'linkLive'}>
-          <a href={props.linkLive} target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faPlayCircle} />
-          </a>
-        </IconButton>
-      )
-    }
-
-    return linkButtons
-  }
+  const { image, title, description, linkLive, linkGithub } = props
 
   return (
-    <MainContainer image={props.image}>
+    <MainContainer image={image}>
       <CoverPanel>
         <Header>
-          <Title>{props.title}</Title>
-          <Description>{props.text}</Description>
+          <Title>{title}</Title>
+          <Description>{description}</Description>
         </Header>
-        <ButtonContainer>{setLinkButtons().map(item => item)}</ButtonContainer>
+        <ButtonContainer>
+          {linkGithub && (
+            <IconButton
+              href={linkGithub}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} />
+            </IconButton>
+          )}
+          {linkLive && (
+            <IconButton
+              href={linkLive}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faPlayCircle} />
+            </IconButton>
+          )}
+        </ButtonContainer>
       </CoverPanel>
     </MainContainer>
   )
@@ -106,7 +101,7 @@ const ButtonContainer = styled.div`
   align-items: flex-end;
   font-size: 100px;
 `
-const IconButton = styled.div`
+const IconButton = styled.a`
   width: auto;
   height: fit-content;
   font-size: 100px;

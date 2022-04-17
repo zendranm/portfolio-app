@@ -19,7 +19,7 @@ export const ProjectsSection = props => {
               key={project.order}
               image={project.thumbnail}
               title={project.project_name}
-              text={project.project_description}
+              description={project.project_description}
               linkLive={project.demoUrl}
               linkGithub={project.githubUrl}
             />
