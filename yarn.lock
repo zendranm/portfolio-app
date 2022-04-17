@@ -1279,7 +1279,7 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
-"@hot-loader/react-dom@npm:@hot-loader/react-dom", "react-dom@npm:@hot-loader/react-dom":
+"@hot-loader/react-dom@npm:@hot-loader/react-dom", react-dom@^17.0.2, "react-dom@npm:@hot-loader/react-dom":
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/@hot-loader/react-dom/-/react-dom-17.0.2.tgz#0b24e484093e8f97eb5c72bebdda44fc20bc8400"
   integrity sha512-G2RZrFhsQClS+bdDh/Ojpk3SgocLPUGnvnJDTQYnmKSSwXtU+Yh+8QMs+Ia3zaAvBiOSpIIDSUxuN69cvKqrWg==
@@ -1839,7 +1839,7 @@
   resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-2.29.3.tgz#646f80eb781c9e6391981943aef347e6c4966d9a"
   integrity sha512-QjgNnQyUg8KKZqWiAeHHrddlP8rzOuSVtXR87timOFoLVKyVQKhJcmbo08JAYhD8gRRrOMqFVHeaiixMpp1knA==
 
-"@sanity/client@^3.3.0":
+"@sanity/client@3.3.0":
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/@sanity/client/-/client-3.3.0.tgz#0b01b1ee25f9d12e0fd9d119fe752f0aeb18843a"
   integrity sha512-ecIRsV+IncI1P9I6ZdB3xKLBpWVggqtiY0RLWeT3RWaP4cX6lXzD5fPknaXaBnCxtIr9ZhqZVqpRkyjrUlHe0Q==
@@ -2465,6 +2465,14 @@ ajv@^8.0.1:
     json-schema-traverse "^1.0.0"
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
+
+animatedtxt@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/animatedtxt/-/animatedtxt-1.1.3.tgz#29f8eaa9b73849a6fa1817fa55f4fb17a925dccd"
+  integrity sha512-U2DZbZVsMefXjvU8CEeAzzHzff1k5bI5SwHTsXahsNMyOfRJ/n7sOdRbOSwsfQQAVsfhiCP9syYLXngsl4EqHA==
+  dependencies:
+    react "^17.0.2"
+    react-dom "^17.0.2"
 
 anser@^2.1.0:
   version "2.1.1"
@@ -4424,7 +4432,7 @@ eslint-plugin-jsx-a11y@^6.5.1:
     language-tags "^1.0.5"
     minimatch "^3.0.4"
 
-eslint-plugin-react-hooks@^4.3.0, eslint-plugin-react-hooks@^4.4.0:
+eslint-plugin-react-hooks@4.4.0, eslint-plugin-react-hooks@^4.3.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.4.0.tgz#71c39e528764c848d8253e1aa2c7024ed505f6c4"
   integrity sha512-U3RVIfdzJaeKDQKEJbz5p3NW8/L80PCATJAfuojwbaEL+gBjfGdhUcGde+WGUW46Q5sr/NgxevsIiDtNXrvZaQ==
@@ -8441,6 +8449,14 @@ react@18.0.0:
   integrity sha512-x+VL6wbT4JRVPm7EGxXhZ8w8LTROaxPXOqhlGyVSrv0sB1jkyFGgXxJ8LVoPRLvPR6/CIZGFmfzqUa2NYeMr2A==
   dependencies:
     loose-envify "^1.1.0"
+
+react@^17.0.2:
+  version "17.0.2"
+  resolved "https://registry.yarnpkg.com/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
+  integrity sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
 
 read@^1.0.7:
   version "1.0.7"
