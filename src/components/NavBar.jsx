@@ -1,11 +1,11 @@
-import React from "react"
-import "../styles/NavBar.scss"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faTimes } from "@fortawesome/free-solid-svg-icons"
+import React from 'react'
+import '../styles/NavBar.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
-const NavBar = props => {
+export const NavBar = props => {
   const scrollToRef = ref => {
-    window.scrollTo({ top: ref.current.offsetTop, behavior: "smooth" })
+    window.scrollTo({ top: ref.current.offsetTop, behavior: 'smooth' })
   }
 
   const handleOptionClick = ref => {
@@ -76,5 +76,3 @@ const NavBar = props => {
     </div>
   )
 }
-
-export default NavBar

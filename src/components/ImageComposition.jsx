@@ -1,8 +1,8 @@
-import React from "react"
-import "../styles/ImageComposition.scss"
-import myImage from "../graphics/about_me_image_tinypng.png"
+import React from 'react'
+import '../styles/ImageComposition.scss'
+import myImage from '../graphics/about_me_image_tinypng.png'
 
-const ImageComposition = () => {
+export const ImageComposition = () => {
   return (
     <div className="ImageComposition">
       <div className="backBlobLayer">
@@ -27,5 +27,3 @@ const ImageComposition = () => {
     </div>
   )
 }
-
-export default ImageComposition

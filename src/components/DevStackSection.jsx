@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/FourthPanel.scss'
-import SectionTitle from '../components/SectionTitle'
+import { SectionTitle } from '../components/SectionTitle'
 import { useSanityQuery } from '../hooks/useSanityQuery'
 
 export const DevStackSection = props => {

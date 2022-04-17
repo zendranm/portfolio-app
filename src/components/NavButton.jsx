@@ -1,9 +1,9 @@
-import React from "react"
-import "../styles/NavButton.scss"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars } from "@fortawesome/free-solid-svg-icons"
+import React from 'react'
+import '../styles/NavButton.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
-const NavButton = props => {
+export const NavButton = props => {
   return (
     <div
       className="NavButton"
@@ -18,5 +18,3 @@ const NavButton = props => {
     </div>
   )
 }
-
-export default NavButton

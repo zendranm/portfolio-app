@@ -1,7 +1,7 @@
-import React from "react";
-import "../styles/SectionTitle.scss";
+import React from 'react'
+import '../styles/SectionTitle.scss'
 
-const SectionTitle = (props) => {
+export const SectionTitle = props => {
   return (
     <div className="SectionTitle">
       <div className="text">{props.text}</div>
@@ -14,7 +14,5 @@ const SectionTitle = (props) => {
         <div />
       )}
     </div>
-  );
-};
-
-export default SectionTitle;
+  )
+}

@@ -1,7 +1,7 @@
-import React from "react";
-import "../styles/HelloText.scss";
+import React from 'react'
+import '../styles/HelloText.scss'
 
-const HelloText = () => {
+export const HelloText = () => {
   return (
     <div className="HelloText">
       <div className="tile" />
@@ -60,7 +60,5 @@ const HelloText = () => {
         </svg>
       </div>
     </div>
-  );
-};
-
-export default HelloText;
+  )
+}

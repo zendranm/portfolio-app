@@ -1,7 +1,7 @@
-import React from "react"
-import "../styles/EmailPanel.scss"
+import React from 'react'
+import '../styles/EmailPanel.scss'
 
-const EmailPanel = () => {
+export const EmailPanel = () => {
   return (
     <div className="EmailPanel">
       <div className="inputFields">
@@ -36,5 +36,3 @@ const EmailPanel = () => {
     </div>
   )
 }
-
-export default EmailPanel

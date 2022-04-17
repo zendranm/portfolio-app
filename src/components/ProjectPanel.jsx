@@ -1,35 +1,35 @@
-import React from "react";
-import "../styles/ProjectPanel.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faPlayCircle } from "@fortawesome/free-solid-svg-icons";
+import React from 'react'
+import '../styles/ProjectPanel.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faPlayCircle } from '@fortawesome/free-solid-svg-icons'
 
-const ProjectPanel = (props) => {
+export const ProjectPanel = props => {
   let setLinkButtons = () => {
-    let linkButtons = [];
+    let linkButtons = []
 
-    if (props.linkGithub !== "") {
+    if (props.linkGithub !== '') {
       linkButtons.push(
-        <div className="linkButton" key={props.title + "linkGithub"}>
+        <div className="linkButton" key={props.title + 'linkGithub'}>
           <a href={props.linkGithub} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </div>
-      );
+      )
     }
 
-    if (props.linkLive !== "") {
+    if (props.linkLive !== '') {
       linkButtons.push(
-        <div className="linkButton" key={props.title + "linkLive"}>
+        <div className="linkButton" key={props.title + 'linkLive'}>
           <a href={props.linkLive} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faPlayCircle} />
           </a>
         </div>
-      );
+      )
     }
 
-    return linkButtons;
-  };
+    return linkButtons
+  }
 
   return (
     <div
@@ -41,10 +41,8 @@ const ProjectPanel = (props) => {
           <div className="title">{props.title}</div>
           <div className="text">{props.text}</div>
         </div>
-        <div className="buttons">{setLinkButtons().map((item) => item)}</div>
+        <div className="buttons">{setLinkButtons().map(item => item)}</div>
       </div>
     </div>
-  );
-};
-
-export default ProjectPanel;
+  )
+}

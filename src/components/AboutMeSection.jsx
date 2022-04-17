@@ -1,8 +1,8 @@
 import React from 'react'
 import '../styles/ThirdPanel.scss'
-import SectionTitle from '../components/SectionTitle'
-import SubSectionTitle from '../components/SubSectionTitle'
-import ImageComposition from '../components/ImageComposition'
+import { SectionTitle } from '../components/SectionTitle'
+import { SubSectionTitle } from '../components/SubSectionTitle'
+import { ImageComposition } from '../components/ImageComposition'
 import { useSanityQuery } from '../hooks/useSanityQuery'
 
 export const AboutMeSection = props => {

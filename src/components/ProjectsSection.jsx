@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/SecondPanel.scss'
-import SectionTitle from '../components/SectionTitle'
-import ProjectPanel from '../components/ProjectPanel'
+import { SectionTitle } from '../components/SectionTitle'
+import { ProjectPanel } from '../components/ProjectPanel'
 import { useSanityQuery } from '../hooks/useSanityQuery'
 
 export const ProjectsSection = props => {
