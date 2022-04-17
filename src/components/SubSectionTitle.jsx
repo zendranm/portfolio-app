@@ -1,5 +1,4 @@
 import React from 'react'
-import '../styles/SubSectionTitle.scss'
 import styled from 'styled-components'
 
 export const SubSectionTitle = props => {
