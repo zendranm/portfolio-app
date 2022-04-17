@@ -3,7 +3,7 @@ import Helmet from "react-helmet"
 import "../styles/App.scss"
 import NavBar from "../components/NavBar"
 import NavButton from "../components/NavButton"
-import FirstPanel from "../components/FirstPanel"
+import IntroSection from "../components/IntroSection"
 import SecondPanel from "../components/SecondPanel"
 import ThirdPanel from "../components/ThirdPanel"
 import FourthPanel from "../components/FourthPanel"
@@ -50,14 +50,14 @@ const Index = () => {
     }
   }
 
-  const FirstPanelRef = useRef(null)
+  const IntroSectionRef = useRef(null)
   const SecondPanelRef = useRef(null)
   const ThirdPanelRef = useRef(null)
   const FourthPanelRef = useRef(null)
   const FifthPanelRef = useRef(null)
 
   const listOfRefs = [
-    FirstPanelRef,
+    IntroSectionRef,
     SecondPanelRef,
     ThirdPanelRef,
     FourthPanelRef,
@@ -84,7 +84,7 @@ const Index = () => {
       </Helmet>
       {navOption}
       <div className="MainPanel">
-        <FirstPanel customRef={listOfRefs[0]} />
+        <IntroSection customRef={listOfRefs[0]} />
         <SecondPanel customRef={listOfRefs[1]} />
         <ThirdPanel customRef={listOfRefs[2]} />
         <FourthPanel customRef={listOfRefs[3]} />
