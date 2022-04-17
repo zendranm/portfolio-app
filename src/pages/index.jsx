@@ -10,6 +10,8 @@ import { DevStackSection } from '../components/DevStackSection'
 import { ContactSection } from '../components/ContactSection'
 import favicon from '../graphics/favicon.svg'
 import '../styles/index.scss'
+import { theme } from '../styles/theme'
+import { ThemeProvider } from 'styled-components'
 
 const Index = () => {
   const [isNavBarVisible, updateIsNavBarVisible] = useState(false)
@@ -77,20 +79,22 @@ const Index = () => {
     )
   }
   return (
-    <div className="App">
-      <Helmet>
-        <title>Michał Zendran</title>
-        <link rel="icon" type="image/svg+xml" href={favicon} />
-      </Helmet>
-      {navOption}
-      <div className="MainPanel">
-        <IntroSection customRef={listOfRefs[0]} />
-        <ProjectsSection customRef={listOfRefs[1]} />
-        <AboutMeSection customRef={listOfRefs[2]} />
-        <DevStackSection customRef={listOfRefs[3]} />
-        <ContactSection customRef={listOfRefs[4]} />
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <Helmet>
+          <title>Michał Zendran</title>
+          <link rel="icon" type="image/svg+xml" href={favicon} />
+        </Helmet>
+        {navOption}
+        <div className="MainPanel">
+          <IntroSection customRef={listOfRefs[0]} />
+          <ProjectsSection customRef={listOfRefs[1]} />
+          <AboutMeSection customRef={listOfRefs[2]} />
+          <DevStackSection customRef={listOfRefs[3]} />
+          <ContactSection customRef={listOfRefs[4]} />
+        </div>
       </div>
-    </div>
+    </ThemeProvider>
   )
 }
 
