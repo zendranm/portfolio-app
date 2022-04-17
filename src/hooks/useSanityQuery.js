@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react"
-import sanityClient from "../client.js"
+import { useState, useEffect } from 'react'
+import sanityClient from '../client'
 
 export const useSanityQuery = query => {
   const [sections, setSections] = useState([])
