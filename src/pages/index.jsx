@@ -1,15 +1,15 @@
-import React, { useState, useRef } from "react"
-import Helmet from "react-helmet"
-import "../styles/App.scss"
-import NavBar from "../components/NavBar"
-import NavButton from "../components/NavButton"
-import IntroSection from "../components/IntroSection"
-import SecondPanel from "../components/SecondPanel"
-import ThirdPanel from "../components/ThirdPanel"
-import FourthPanel from "../components/FourthPanel"
-import FifthPanel from "../components/FifthPanel"
-import favicon from "../graphics/favicon.svg"
-import "../styles/index.scss"
+import React, { useState, useRef } from 'react'
+import Helmet from 'react-helmet'
+import '../styles/App.scss'
+import NavBar from '../components/NavBar'
+import NavButton from '../components/NavButton'
+import { IntroSection } from '../components/IntroSection'
+import { ProjectsSection } from '../components/ProjectsSection'
+import { AboutMeSection } from '../components/AboutMeSection'
+import { DevStackSection } from '../components/DevStackSection'
+import { ContactSection } from '../components/ContactSection'
+import favicon from '../graphics/favicon.svg'
+import '../styles/index.scss'
 
 const Index = () => {
   const [isNavBarVisible, updateIsNavBarVisible] = useState(false)
@@ -51,17 +51,17 @@ const Index = () => {
   }
 
   const IntroSectionRef = useRef(null)
-  const SecondPanelRef = useRef(null)
-  const ThirdPanelRef = useRef(null)
-  const FourthPanelRef = useRef(null)
-  const FifthPanelRef = useRef(null)
+  const ProjectsSectionRef = useRef(null)
+  const AboutMeSectionRef = useRef(null)
+  const DevStackSectionRef = useRef(null)
+  const ContactSectionRef = useRef(null)
 
   const listOfRefs = [
     IntroSectionRef,
-    SecondPanelRef,
-    ThirdPanelRef,
-    FourthPanelRef,
-    FifthPanelRef,
+    ProjectsSectionRef,
+    AboutMeSectionRef,
+    DevStackSectionRef,
+    ContactSectionRef,
   ]
 
   let navOption
@@ -85,10 +85,10 @@ const Index = () => {
       {navOption}
       <div className="MainPanel">
         <IntroSection customRef={listOfRefs[0]} />
-        <SecondPanel customRef={listOfRefs[1]} />
-        <ThirdPanel customRef={listOfRefs[2]} />
-        <FourthPanel customRef={listOfRefs[3]} />
-        <FifthPanel customRef={listOfRefs[4]} />
+        <ProjectsSection customRef={listOfRefs[1]} />
+        <AboutMeSection customRef={listOfRefs[2]} />
+        <DevStackSection customRef={listOfRefs[3]} />
+        <ContactSection customRef={listOfRefs[4]} />
       </div>
     </div>
   )

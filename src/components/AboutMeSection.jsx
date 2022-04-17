@@ -1,11 +1,11 @@
-import React from "react"
-import "../styles/ThirdPanel.scss"
-import SectionTitle from "../components/SectionTitle"
-import SubSectionTitle from "../components/SubSectionTitle"
-import ImageComposition from "../components/ImageComposition"
-import { useSanityQuery } from "../hooks/useSanityQuery"
+import React from 'react'
+import '../styles/ThirdPanel.scss'
+import SectionTitle from '../components/SectionTitle'
+import SubSectionTitle from '../components/SubSectionTitle'
+import ImageComposition from '../components/ImageComposition'
+import { useSanityQuery } from '../hooks/useSanityQuery'
 
-const ThirdPanel = props => {
+export const AboutMeSection = props => {
   const query = `*[_type == "about_me"]{section_name, section_content, order}`
   const sections = useSanityQuery(query)
 
@@ -31,5 +31,3 @@ const ThirdPanel = props => {
     </div>
   )
 }
-
-export default ThirdPanel

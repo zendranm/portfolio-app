@@ -3,7 +3,7 @@ import '../styles/FirstPanel.scss'
 import HelloText from './HelloText'
 import myImage from '../graphics/snowboard_tinypng.png'
 
-const IntroSection = props => {
+export const IntroSection = props => {
   const [animationState, updateAnimationState] = useState('paused')
 
   useEffect(() => {
@@ -42,5 +42,3 @@ const IntroSection = props => {
     </div>
   )
 }
-
-export default IntroSection

@@ -1,10 +1,10 @@
-import React from "react"
-import "../styles/SecondPanel.scss"
-import SectionTitle from "../components/SectionTitle"
-import ProjectPanel from "../components/ProjectPanel"
-import { useSanityQuery } from "../hooks/useSanityQuery"
+import React from 'react'
+import '../styles/SecondPanel.scss'
+import SectionTitle from '../components/SectionTitle'
+import ProjectPanel from '../components/ProjectPanel'
+import { useSanityQuery } from '../hooks/useSanityQuery'
 
-const SecondPanel = props => {
+export const ProjectsSection = props => {
   const query = `*[_type == "projects"]{project_name, project_description, githubUrl, demoUrl, "thumbnail": thumbnail.asset->url, order}`
   const projects = useSanityQuery(query)
 
@@ -28,5 +28,3 @@ const SecondPanel = props => {
     </div>
   )
 }
-
-export default SecondPanel

@@ -1,12 +1,12 @@
-import React from "react";
-import "../styles/FifthPanel.scss";
-import SectionTitle from "../components/SectionTitle";
-import EmailPanel from "../components/EmailPanel";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import React from 'react'
+import '../styles/FifthPanel.scss'
+import SectionTitle from '../components/SectionTitle'
+import EmailPanel from '../components/EmailPanel'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
-const FifthPanel = (props) => {
+export const ContactSection = props => {
   return (
     <div className="FifthPanel" ref={props.customRef}>
       <SectionTitle text="CONTACT" areTilesVisible={true} />
@@ -37,7 +37,5 @@ const FifthPanel = (props) => {
         </div>
       </div>
     </div>
-  );
-};
-
-export default FifthPanel;
+  )
+}

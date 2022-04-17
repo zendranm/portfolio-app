@@ -1,9 +1,9 @@
-import React from "react"
-import "../styles/FourthPanel.scss"
-import SectionTitle from "../components/SectionTitle"
-import { useSanityQuery } from "../hooks/useSanityQuery"
+import React from 'react'
+import '../styles/FourthPanel.scss'
+import SectionTitle from '../components/SectionTitle'
+import { useSanityQuery } from '../hooks/useSanityQuery'
 
-const FourthPanel = props => {
+export const DevStackSection = props => {
   const query = `*[_type == "dev_stack"]{technology_name, "icon": icon.asset->url, order}`
   const technologies = useSanityQuery(query)
 
@@ -25,5 +25,3 @@ const FourthPanel = props => {
     </div>
   )
 }
-
-export default FourthPanel
