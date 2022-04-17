@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from "react"
-import "../styles/FirstPanel.scss"
-import HelloText from "../components/HelloText"
-import myImage from "../graphics/snowboard_tinypng.png"
+import React, { useState, useEffect } from 'react'
+import '../styles/FirstPanel.scss'
+import HelloText from './HelloText'
+import myImage from '../graphics/snowboard_tinypng.png'
 
 const IntroSection = props => {
-  const [animationState, updateAnimationState] = useState("paused")
+  const [animationState, updateAnimationState] = useState('paused')
 
   useEffect(() => {
-    updateAnimationState(document.hidden ? "paused" : "running")
+    updateAnimationState(document.hidden ? 'paused' : 'running')
 
     document.onvisibilitychange = function () {
-      if (document.visibilityState === "visible") {
-        updateAnimationState("running")
+      if (document.visibilityState === 'visible') {
+        updateAnimationState('running')
       } else {
-        updateAnimationState("paused")
+        updateAnimationState('paused')
       }
     }
   }, [])

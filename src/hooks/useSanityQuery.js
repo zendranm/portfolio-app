@@ -8,7 +8,9 @@ export const useSanityQuery = query => {
     sanityClient
       .fetch(query)
       .then(data => setSections(data))
-      .catch(console.error)
+      .catch(error => {
+        throw error
+      })
   }, [query])
 
   return sections
