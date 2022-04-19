@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons'
 import styled from 'styled-components'
+import { breakpoints } from '../styles/theme'
 
 export const ProjectPanel = props => {
   const { image, title, description, linkLive, linkGithub } = props
@@ -62,7 +63,6 @@ const CoverPanel = styled.div`
   transition: all 0.3s ease-out;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   justify-content: space-between;
 
   ${MainContainer}:hover & {
@@ -75,38 +75,41 @@ const Header = styled.div`
 
 const Title = styled.div`
   font-weight: 900;
-  font-size: 30px;
-  margin-bottom: 20px;
 
-  @media (max-width: 500px) {
+  @media (min-width: ${breakpoints.mobileS}) {
     font-size: 20px;
     margin-bottom: 5px;
+  }
+
+  @media (min-width: ${breakpoints.mobileL}) {
+    font-size: 30px;
+    margin-bottom: 20px;
   }
 `
 
 const Description = styled.div`
-  font-size: 20px;
-
-  @media (max-width: 500px) {
+  @media (min-width: ${breakpoints.mobileS}) {
     font-size: 15px;
+  }
+
+  @media (min-width: ${breakpoints.mobileL}) {
+    font-size: 20px;
   }
 `
 
 const ButtonContainer = styled.div`
-  height: 50%;
+  height: 40%;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-evenly;
-  align-items: flex-end;
   font-size: 100px;
 `
 const IconButton = styled.a`
+  height: 100%;
   width: auto;
-  height: fit-content;
-  font-size: 100px;
+  display: flex;
 
-  @media (max-width: 500px) {
-    font-size: 45px;
+  & svg {
+    height: 100%;
   }
 `

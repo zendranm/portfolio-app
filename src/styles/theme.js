@@ -8,3 +8,10 @@ export const theme = {
 
   sectionTitleFont: 'Anton, sans-serif',
 }
+
+export const breakpoints = {
+  mobileS: '320px',
+  mobileL: '425px',
+  tablet: '760px',
+  desktop: '1200px',
+}
