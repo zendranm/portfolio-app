@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { breakpoints } from '../styles/theme'
 
 export const SectionTitle = props => {
   return (
@@ -18,7 +19,7 @@ export const SectionTitle = props => {
 const MainContainer = styled.div`
   position: relative;
   margin: 0 auto;
-  width: fit-content;
+  width: 100%;
   height: 100%;
   z-index: 0;
   margin-top: 100px;
@@ -35,25 +36,9 @@ const Tile = styled.div`
   background-color: ${props => props.theme.primaryColor};
   position: absolute;
   z-index: -1;
+  max-width: ${props => (props.upper ? '400px' : '500px')};
   ${props => (props.upper ? 'top: 15%' : 'bottom: 15%')};
-
-  @media (min-width: 320px) {
-    width: 150px;
-    ${props => (props.upper ? 'right: -50px' : 'left: -50px')};
-  }
-
-  @media (min-width: 370px) {
-    width: 170px;
-    ${props => (props.upper ? 'right: -70px' : 'left: -70px')};
-  }
-
-  @media (min-width: 400px) {
-    width: 210px;
-    ${props => (props.upper ? 'right: -90px' : 'left: -90px')};
-  }
-
-  @media (min-width: 1200px) {
-    width: ${props => (props.upper ? '400px' : '500px')};
-    ${props => (props.upper ? 'right: -280px' : 'left: -380px')};
-  }
+  width: 50%;
+  ${props =>
+    props.upper ? 'left: calc(50% - 30px)' : 'right: calc(50% - 30px)'};
 `
