@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { breakpoints } from '../styles/theme'
 
 export const SectionTitle = props => {
   return (
