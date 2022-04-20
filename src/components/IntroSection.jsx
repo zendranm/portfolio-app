@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import '../styles/FirstPanel.scss'
-import { HelloText } from './HelloText'
+import { AnimatedText } from './AnimatedText'
 import myImage from '../graphics/snowboard_tinypng.png'
 
 export const IntroSection = props => {
@@ -27,7 +27,7 @@ export const IntroSection = props => {
             className="mainText"
             style={{ animationPlayState: animationState }}
           >
-            <HelloText />
+            <AnimatedText />
             <div className="NamePart">I'M MICHAŁ</div>
             <div className="NamePart-shadow">I'M MICHAŁ</div>
             <div className="JobPart">FRONTEND DEVELOPER</div>

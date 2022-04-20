@@ -11,7 +11,7 @@ const calculatePhraseSize = currentWidth => {
   if (currentWidth >= breakpoints.mobileS) return 50
 }
 
-export const HelloText = () => {
+export const AnimatedText = () => {
   const { width } = useWindowDimensions()
 
   return (
