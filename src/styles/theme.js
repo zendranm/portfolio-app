@@ -5,6 +5,9 @@ export const theme = {
   fontColor2: '#1c1c1c',
   fontColor3: '#737373',
 
+  gradientColor1: '#02fea9',
+  gradientColor2: '#33e6b6',
+
   $projectPanelWidth: 30,
 
   sectionTitleFont: 'Anton, sans-serif',
