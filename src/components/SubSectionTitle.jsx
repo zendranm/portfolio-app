@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { breakpoints } from '../styles/theme'
+import { breakpointsPixels } from '../styles/theme'
 
 export const SubSectionTitle = props => {
   return (
@@ -30,11 +30,11 @@ const Tile = styled.div`
   bottom: 0px;
   z-index: -1;
 
-  @media (min-width: ${breakpoints.mobileS}) {
+  @media (min-width: ${breakpointsPixels.mobileS}) {
     width: 100%;
   }
 
-  @media (min-width: ${breakpoints.mobileL}) {
+  @media (min-width: ${breakpointsPixels.mobileL}) {
     width: 130%;
   }
 `

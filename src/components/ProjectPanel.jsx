@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons'
 import styled from 'styled-components'
-import { breakpoints } from '../styles/theme'
+import { breakpointsPixels } from '../styles/theme'
 
 export const ProjectPanel = props => {
   const { image, title, description, linkLive, linkGithub } = props
@@ -76,23 +76,23 @@ const Header = styled.div`
 const Title = styled.div`
   font-weight: 900;
 
-  @media (min-width: ${breakpoints.mobileS}) {
+  @media (min-width: ${breakpointsPixels.mobileS}) {
     font-size: 20px;
     margin-bottom: 5px;
   }
 
-  @media (min-width: ${breakpoints.mobileL}) {
+  @media (min-width: ${breakpointsPixels.mobileL}) {
     font-size: 30px;
     margin-bottom: 20px;
   }
 `
 
 const Description = styled.div`
-  @media (min-width: ${breakpoints.mobileS}) {
+  @media (min-width: ${breakpointsPixels.mobileS}) {
     font-size: 15px;
   }
 
-  @media (min-width: ${breakpoints.mobileL}) {
+  @media (min-width: ${breakpointsPixels.mobileL}) {
     font-size: 20px;
   }
 `
