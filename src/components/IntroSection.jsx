@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import '../styles/FirstPanel.scss'
 import { AnimatedText } from './AnimatedText'
 import myImage from '../graphics/snowboard_tinypng.png'
+import { DividerPanel } from './DividerPanel'
+import { theme } from '../styles/theme'
 
 export const IntroSection = props => {
   const [animationState, updateAnimationState] = useState('paused')
@@ -38,7 +40,7 @@ export const IntroSection = props => {
           <img src={myImage} alt="" />
         </div>
       </div>
-      <div className="bottomV" />
+      <DividerPanel dividerColor={theme.secondaryColor} shape="v" isBottom />
     </div>
   )
 }

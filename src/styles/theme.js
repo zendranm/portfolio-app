@@ -1,6 +1,8 @@
 export const theme = {
   primaryColor: '#26e9a5',
   secondaryColor: '#1c1c1c',
+  tertiaryColor: '#ffffff',
+
   fontColor1: '#ffffff',
   fontColor2: '#1c1c1c',
   fontColor3: '#737373',

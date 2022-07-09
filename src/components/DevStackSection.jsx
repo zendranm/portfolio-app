@@ -2,6 +2,8 @@ import React from 'react'
 import '../styles/FourthPanel.scss'
 import { SectionTitle } from '../components/SectionTitle'
 import { useSanityQuery } from '../hooks/useSanityQuery'
+import { DividerPanel } from './DividerPanel'
+import { theme } from '../styles/theme'
 
 export const DevStackSection = props => {
   const query = `*[_type == "dev_stack"]{technology_name, "icon": icon.asset->url, order}`
@@ -9,7 +11,7 @@ export const DevStackSection = props => {
 
   return (
     <div className="FourthPanel" ref={props.customRef}>
-      <div className="upperV" />
+      <DividerPanel dividerColor={theme.tertiaryColor} shape="left" />
       <SectionTitle text="DEV STACK" areTilesVisible={false} />
       <div className="stackList">
         {technologies
@@ -21,7 +23,7 @@ export const DevStackSection = props => {
             </div>
           ))}
       </div>
-      <div className="bottomV" />
+      <DividerPanel dividerColor={theme.secondaryColor} shape="v" isBottom />
     </div>
   )
 }
