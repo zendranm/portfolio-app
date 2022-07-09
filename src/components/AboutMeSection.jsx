@@ -4,6 +4,7 @@ import { SectionTitle } from '../components/SectionTitle'
 import { SubSectionTitle } from '../components/SubSectionTitle'
 import { ImageComposition } from '../components/ImageComposition'
 import { useSanityQuery } from '../hooks/useSanityQuery'
+import { DividerPanel } from './DividerPanel'
 
 export const AboutMeSection = props => {
   const query = `*[_type == "about_me"]{section_name, section_content, order}`
@@ -11,7 +12,7 @@ export const AboutMeSection = props => {
 
   return (
     <div className="ThirdPanel" ref={props.customRef}>
-      <div className="upperV" />
+      <DividerPanel />
       <SectionTitle text="ABOUT ME" areTilesVisible={true} />
       <div className="aboutMe">
         <div className="leftBox">
