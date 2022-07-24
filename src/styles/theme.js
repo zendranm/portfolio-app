@@ -14,7 +14,7 @@ export const theme = {
 
   stackIconWidth: 60,
   stackIconMargin: 30,
-  stackIconWidthWithMargin: stackIconWidth + 2 * stackIconMargin,
+  stackIconWidthWithMargin: 60 + 2 * 30,
   scrollBarWidth: 17,
 }
 
