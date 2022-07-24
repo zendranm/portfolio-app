@@ -46,28 +46,20 @@ const StackList = styled.div`
   align-items: center;
   margin: 0 auto;
 
-  @media (min-width: calc(2 * (${theme.stackIconWidth} + (2 * ${theme.stackIconMargin})) * 1px)) {
-    width: calc(
-      2 * (${theme.stackIconWidth} + (2 * ${theme.stackIconMargin})) * 1px
-    );
+  @media (min-width: calc(((2 * ${theme.stackIconWidthWithMargin}) + ${theme.scrollBarWidth}) * 1px)) {
+    width: calc(2 * ${theme.stackIconWidthWithMargin} * 1px);
   }
 
-  @media (min-width: calc(4 * (${theme.stackIconWidth} + (2 * ${theme.stackIconMargin})) * 1px)) {
-    width: calc(
-      4 * (${theme.stackIconWidth} + (2 * ${theme.stackIconMargin})) * 1px
-    );
+  @media (min-width: calc(((4 * ${theme.stackIconWidthWithMargin}) + ${theme.scrollBarWidth}) * 1px)) {
+    width: calc(4 * ${theme.stackIconWidthWithMargin} * 1px);
   }
 
-  @media (min-width: calc(7 * (${theme.stackIconWidth} + (2 * ${theme.stackIconMargin})) * 1px)) {
-    width: calc(
-      7 * (${theme.stackIconWidth} + (2 * ${theme.stackIconMargin})) * 1px
-    );
+  @media (min-width: calc(((7 * ${theme.stackIconWidthWithMargin}) + ${theme.scrollBarWidth}) * 1px)) {
+    width: calc(7 * ${theme.stackIconWidthWithMargin} * 1px);
   }
 
-  @media (min-width: calc(14 * (${theme.stackIconWidth} + (2 * ${theme.stackIconMargin})) * 1px)) {
-    width: calc(
-      14 * (${theme.stackIconWidth} + (2 * ${theme.stackIconMargin})) * 1px
-    );
+  @media (min-width: calc(((14 * ${theme.stackIconWidthWithMargin}) + ${theme.scrollBarWidth}) * 1px)) {
+    width: calc(14 * ${theme.stackIconWidthWithMargin} * 1px);
   }
 `
 

@@ -14,6 +14,8 @@ export const theme = {
 
   stackIconWidth: 60,
   stackIconMargin: 30,
+  stackIconWidthWithMargin: stackIconWidth + 2 * stackIconMargin,
+  scrollBarWidth: 17,
 }
 
 export const breakpoints = {
