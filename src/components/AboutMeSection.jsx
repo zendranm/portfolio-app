@@ -23,10 +23,10 @@ export const AboutMeSection = props => {
           {sections
             .sort((prev, next) => prev.order - next.order)
             .map(section => (
-              <div key={section.order}>
+              <Description key={section.order}>
                 <SubSectionTitle text={section.section_name} />
                 <div>{section.section_content}</div>
-              </div>
+              </Description>
             ))}
         </RightBox>
       </Wrapper>
@@ -47,7 +47,6 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
 
@@ -59,7 +58,8 @@ const Wrapper = styled.div`
 `
 
 const LeftBox = styled.div`
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   height: 500px;
   position: relative;
   flex: 0 0 auto;
@@ -70,16 +70,24 @@ const LeftBox = styled.div`
 `
 
 const RightBox = styled.div`
-  font-size: 20px;
   text-align: justify;
   text-justify: inter-word;
   flex: 1 1 auto;
 
+  @media (min-width: ${breakpointsPixels.mobileS}) {
+    max-width: 800px;
+    font-size: 17px;
+  }
+
+  @media (min-width: ${breakpointsPixels.mobileL}) {
+    font-size: 20px;
+  }
+
   @media (min-width: ${breakpointsPixels.desktop}) {
     max-width: 800px;
   }
+`
 
-  @media (min-width: ${breakpointsPixels.mobileS}) {
-    max-width: 800px;
-  }
+const Description = styled.div`
+  margin-bottom: 25px;
 `

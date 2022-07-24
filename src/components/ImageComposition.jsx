@@ -22,16 +22,17 @@ export const ImageComposition = () => {
         </Svg>
       </Blob>
       <ImageLayer>
-        <img src={myImage} alt="" />
+        <Img src={myImage} alt="" />
       </ImageLayer>
     </MainContainer>
   )
 }
 
 const MainContainer = styled.div`
-  position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
 `
 
 const Blob = styled.div`
@@ -53,17 +54,15 @@ const Path = styled.path`
 `
 
 const ImageLayer = styled.div`
-  position: absolute;
-  height: 90%;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+  height: 100%;
   z-index: 2;
+  width: fit-content;
+  display: flex;
+`
 
-  & img {
-    height: 100%;
-    filter: drop-shadow(9px -10px 19px rgba(0, 0, 0, 0.5));
-  }
+const Img = styled.img`
+  max-height: 90%;
+  width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(9px -10px 19px rgba(0, 0, 0, 0.5));
 `
