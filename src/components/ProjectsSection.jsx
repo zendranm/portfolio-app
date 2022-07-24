@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/SecondPanel.scss'
+import styled from 'styled-components'
 import { SectionTitle } from '../components/SectionTitle'
 import { ProjectPanel } from '../components/ProjectPanel'
 import { useSanityQuery } from '../hooks/useSanityQuery'
@@ -9,9 +9,9 @@ export const ProjectsSection = props => {
   const projects = useSanityQuery(query)
 
   return (
-    <div className="SecondPanel" ref={props.customRef}>
+    <MainContainer ref={props.customRef}>
       <SectionTitle text="PROJECTS" areTilesVisible={true} />
-      <div className="projectList">
+      <ProjectList>
         {projects
           .sort((prev, next) => prev.order - next.order)
           .map(project => (
@@ -24,7 +24,21 @@ export const ProjectsSection = props => {
               linkGithub={project.githubUrl}
             />
           ))}
-      </div>
-    </div>
+      </ProjectList>
+    </MainContainer>
   )
 }
+
+const MainContainer = styled.div`
+  width: 100%;
+  background-color: ${props => props.theme.secondaryColor};
+`
+
+const ProjectList = styled.div`
+  max-width: calc((16 * 2 * 30px) + (4 * 20px));
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+`
