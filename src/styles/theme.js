@@ -11,6 +11,9 @@ export const theme = {
   gradientColor2: '#33e6b6',
 
   sectionTitleFont: 'Anton, sans-serif',
+
+  stackIconWidth: 60,
+  stackIconMargin: 30,
 }
 
 export const breakpoints = {
