@@ -22,6 +22,7 @@ export const AnimatedText = () => {
         margin={12}
         size={calculatePhraseSize(width)}
         duration={0.6}
+        cubicBezier={[0.68, 0.04, 0.45, 0.98]}
       >
         <Char char="H" delay={0.8} />
         <Char char="E" delay={1.2} />
